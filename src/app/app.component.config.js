@@ -14,7 +14,7 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/components/home/home.component.html',
+                templateUrl: 'src/app/components/home/home.component.html',
                 controller: "HomeCtrl",
                 controllerAs: "HomeCtrl"
             });

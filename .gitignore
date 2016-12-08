@@ -4,6 +4,7 @@
 
 # Compiled Files #
 ##################
+*.html
 src/*.html
 src/app/*.html
 src/app/components/**/*.html

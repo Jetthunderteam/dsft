@@ -22,7 +22,7 @@
      * Loads the Gulpfile configuration
      */
     function loadGulpConfig() {
-        return require('./src/gulpfile.config.js')();
+        return require('./config/gulpfile.config.js')();
     }
 
     /*************************
@@ -42,12 +42,14 @@
     gulp.task('clean-project', cleanProject);
     gulp.task('compile-scss', compileSCSS);
     gulp.task('compile-jade', compileJade);
-    gulp.task('deploy-dev', ['compile-jade'], deployDev);
+    gulp.task('launch-dev', launchDev);
     gulp.task('run-unit-tests', runUnitTests);
     gulp.task('update-app-constants', updateAppConstants);
     gulp.task('update-app-version-patch', updateAppVersionPatch);
     gulp.task('update-app-version-minor', updateAppVersionMinor);
     gulp.task('update-app-version-major', updateAppVersionMajor);
+    gulp.task('watch-jade', ['compile-jade'], reload);
+    gulp.task('watch-scss', ['compile-scss'], reload(reload({stream: true})));
 
     function buildProject() {
 
@@ -80,17 +82,21 @@
     }
 
     /**
-     * Deploys the development package using browser
-     * sync
+     * Launches the dev environment using browser-sync
      */
-    function deployDev() {
-        util.log(util.colors.pink('Deploying Dev'));
+    function launchDev() {
+        util.log(util.colors.blue('Launching dev environment'));
         browserSync({
-            server: {
-                baseDir: baseDir
+            ui: {
+                port: 7078
             },
-            browser: "Chrome"
-        })
+            server: {
+                baseDir: projectDir
+            },
+            port: 7077
+        });
+        gulp.watch(config.appJade, ['watch-jade']);
+        gulp.watch(config.appSCSS, ['watch-scss']);
     }
 
     function runUnitTests() {
@@ -98,7 +104,7 @@
     }
 
     function updateAppConstants() {
-
+        util.log(util.colors.blue('Updating the application constants'));
     }
 
     /**
