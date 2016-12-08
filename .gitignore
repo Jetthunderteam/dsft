@@ -1,0 +1,56 @@
+# Dependencies #
+################
+/node_modules
+
+# Compiled Files #
+##################
+src/*.html
+src/app/*.html
+src/app/components/**/*.html
+src/*.css
+
+# IDEs and Editors #
+####################
+/.idea
+/.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+# Yarn #
+########
+.yarnclean
+*.lock
+
+# NPM #
+#######
+*.log
+
+# Application #
+###############
+
+# Distribution #
+################
+/dist
+/tmp
+
+# Misc #
+########
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# E2E Tests #
+#############
+/e2e/*.js
+/e2e/*.map
+
+# System Files #
+################
+.DS_Store
+Thumbs.db
