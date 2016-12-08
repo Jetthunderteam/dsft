@@ -1,0 +1,11 @@
+/*************************
+* Core Animations
+**************************/
+.view {height: 100%;}
+/*************************
+* Animations
+**************************/
+@mixin fadeOutAnimation {-webkit-animation:0.5s fadeOut ease; -moz-animation: 0.5s fadeOut; animation:0.8s fadeOut ease;}
+@mixin fadeInAnimation {-webkit-animation:0.5s fadeIn ease; -moz-animation: 0.5s fadeIn; animation:0.8s fadeIn ease; }
+.view.ng-leave 	{ z-index:20; @include fadeOutAnimation}
+.view.ng-enter 	{ z-index:10; @include fadeInAnimation}

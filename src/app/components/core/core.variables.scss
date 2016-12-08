@@ -1,0 +1,39 @@
+/*************************
+Core Variables
+**************************/
+/*************************
+Core Fonts
+**************************/
+$font-open-sans: 'Open Sans', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-merriweather: 'Merriweather', serif;
+$font-roboto: 'Roboto', sans-serif;
+/*************************
+Core Colors
+**************************/
+$white: #fff;
+$black: #000;
+$primary-background: #fff;
+$primary-background-dark: #343434;
+$secondary-background:#f4f4f4;
+$secondary-background-dark: #111;
+$primary-color: #555964;
+$secondary-color: blue;
+$highlight-color: #1776a0;
+$transparent-background: transparent;
+/*************************
+Core Components
+**************************/
+$no-padding: 0;
+$no-margin:0;
+/*************************
+Core Borders
+**************************/
+/*************************
+Core Alerts
+**************************/
+/*************************
+Core Flexbox
+**************************/
+@mixin flexRowStartCenter {display: flex; flex-direction: row; justify-content: flex-start; align-items: center;}
+@mixin flexRowBetweenCenter {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}

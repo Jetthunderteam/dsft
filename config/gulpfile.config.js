@@ -13,23 +13,26 @@ module.exports = function() {
         dependentCSS: [
         ],
         appJS: [
-            app+'app.component.module.js',
-            app+'app.component.config.js',
-            app+'app.component.run.js',
+            app+'app.module.js',
+            app+'app.config.js',
+            app+'app.run.js',
             components+'**/*.js'
         ],
         appSCSS: [
             source+'*.scss',
             app+'*.scss',
+            source+'app/components/core/*.scss',
             source+'app/components/home/*.scss',
-            source+'app/components/training/*.scss'
+            source+'app/components/training/*.scss',
+            source+'app/components/experience/*.scss',
+            source+'app/components/fleet/*.scss',
+            source+'app/components/**/*.scss'
         ],
         appJade: [
             '*.jade',
             source+'*.jade',
             app+'*.jade',
-            source+'app/components/home/*.jade',
-            source+'app/components/training/*.jade'
+            source+'app/components/**/*.jade'
         ],
         appImages: [
         ]

@@ -17,8 +17,10 @@ html(lang="en" ng-app="dsft")
         // Stylesheets
 
     body
+        navigation-component
+
         // View
-        md-content(ui-view='')
+        md-content.view(ui-view='')
         // View
 
         // Frameworks
@@ -43,20 +45,28 @@ html(lang="en" ng-app="dsft")
         // Libraries
 
         // App Component
-        script(src='src/app/app.component.module.js', type='text/javascript')
-        script(src='src/app/app.component.config.js', type='text/javascript')
-        script(src='src/app/app.component.run.js', type='text/javascript')
+        script(src='src/app/app.module.js', type='text/javascript')
+        script(src='src/app/app.config.js', type='text/javascript')
+        script(src='src/app/app.run.js', type='text/javascript')
         // App Component
 
         // Home Component
-        script(src='src/app/components/home/home.component.controller.js', type='text/javascript')
+        script(src='src/app/components/home/home.controller.js', type='text/javascript')
         // Home Component
 
         // Training Component
+        script(src='src/app/components/training/training.controller.js', type='text/javascript')
         // Training Component
 
         // Experience Component
+        script(src='src/app/components/experience/experience.controller.js', type='text/javascript')
         // Experience Component
 
         // Fleet Component
+        script(src='src/app/components/fleet/fleet.controller.js', type='text/javascript')
         // Fleet Component
+
+        // Navigation Component
+        script(src='src/app/components/navigation/navigation.controller.js', type='text/javascript')
+        script(src='src/app/components/navigation/navigation.component.js', type='text/javascript')
+        // Navigation Component
