@@ -15,10 +15,15 @@
         /** Activate */
 
         /** View Bindings */
-        vm.openSideNav = openSideNav;
 
         /** Bindings */
+        vm.openSideNav = openSideNav;
 
+        /**
+         * Opens the side navigation panel from the specified
+         * direction
+         * @param {string} direction - The direction of toggle, I.e, left or right
+         */
         function openSideNav(direction) {
             $mdSidenav(direction).toggle();
         }

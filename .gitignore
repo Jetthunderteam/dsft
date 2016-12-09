@@ -51,6 +51,9 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+# Unit Tests #
+test/reports/
+
 # System Files #
 ################
 .DS_Store
