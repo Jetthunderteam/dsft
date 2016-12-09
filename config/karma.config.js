@@ -41,6 +41,8 @@ module.exports = function(config){
             libs+'angular-ui-router/release/angular-ui-router.min.js',
             libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
             libs+'angular-material/angular-material.min.js',
+            libs+'moment/min/moment.min.js',
+            libs+'moment-timezone/builds/moment-timezone.min.js',
             libs+'angularfire/dist/angularfire.min.js',
             libs+'firebase/firebase.js',
             libs+'angulartics/dist/angulartics.min.js',
@@ -62,7 +64,7 @@ module.exports = function(config){
 
         ngHtml2JsPreprocessor: {
             cacheIdFromPath: function (filepath) {
-                return filepath.substr(filepath.indexOf("app") + 4);
+                return filepath.substr(filepath.indexOf("src") + 4);
             },
             moduleName: 'dsft-templates'
         },

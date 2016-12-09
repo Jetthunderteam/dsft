@@ -22,8 +22,17 @@ function spec() {
         })
     });
 
-    it('Should open the side navigation menu on calling "openSideNav"', function() {
-        controller.closeSideNav('left');
-        expect(mockCloseSideNav).toHaveBeenCalled();
+    describe('Navigation Controller Specs', function () {
+        it('Should have a defined controller', function () {
+            expect(controller).toBeDefined();
+        });
+
+        /**
+         * Sidenav event tests
+         */
+        it('Should open the side navigation menu on calling "openSideNav"', function () {
+            controller.closeSideNav('left');
+            expect(mockCloseSideNav).toHaveBeenCalled();
+        });
     });
 }

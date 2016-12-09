@@ -18,7 +18,8 @@
         'dsft.fleet',
         'dsft.navbar',
         'dsft.navigation',
-        'dsft.footer']);
+        'dsft.footer',
+        'dsft.utils']);
 
     //Auth
 
@@ -34,6 +35,7 @@
     angular.module('dsft.footer', []);
 
     //Utils
+    angular.module('dsft.utils', []);
 
     //Analytics
 })();

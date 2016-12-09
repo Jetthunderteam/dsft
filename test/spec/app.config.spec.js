@@ -13,20 +13,23 @@ function spec() {
         })
     });
 
+    /**
+     * Routing tests
+     */
     it('Should transition to home on calling state "home"', function() {
         mockState = 'home';
-        expect(state.href(mockState)).toEqual('/')
+        expect(state.href(mockState)).toEqual('#/')
     });
     it('Should transition to training on calling state "training"', function() {
         mockState = 'training';
-        expect(state.href(mockState)).toEqual('/training')
+        expect(state.href(mockState)).toEqual('#/training')
     });
     it('Should experience to home on calling state "experience"', function() {
         mockState = 'experience';
-        expect(state.href(mockState)).toEqual('/experience')
+        expect(state.href(mockState)).toEqual('#/experience')
     });
     it('Should fleet to home on calling state "fleet"', function() {
         mockState = 'fleet';
-        expect(state.href(mockState)).toEqual('/fleet')
+        expect(state.href(mockState)).toEqual('#/fleet')
     });
 }
