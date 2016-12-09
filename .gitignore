@@ -9,6 +9,8 @@ src/*.html
 src/app/*.html
 src/app/components/**/*.html
 src/*.css
+src/app/*.css
+src/app/components/**/*.css
 
 # IDEs and Editors #
 ####################

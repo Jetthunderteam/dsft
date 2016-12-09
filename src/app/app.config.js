@@ -9,7 +9,10 @@
 
     appConfig.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider', '$mdThemingProvider'];
     function appConfig($locationProvider, $stateProvider, $urlRouterProvider, $mdThemingProvider) {
-        $locationProvider.html5Mode(true);
+        //$locationProvider.html5Mode({
+        //    enabled: true,
+        //    requireBase: false
+        //});
         $mdThemingProvider.disableTheming();
         $urlRouterProvider.when('', '/');
         $urlRouterProvider.otherwise('/');

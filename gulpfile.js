@@ -65,7 +65,7 @@
      */
     function compileSCSS() {
         util.log(util.colors.blue('Compiling SCSS'));
-        return gulp.src(config.appSCSS)
+        return gulp.src(config.appSCSS, {base: baseDir})
             .pipe(sass())
             .pipe(gulp.dest(baseDir));
     }

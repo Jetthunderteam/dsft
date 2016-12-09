@@ -8,17 +8,17 @@ External Imports
 /*************************
 Local Imports
 **************************/
-@import "app/components/core/core.variables";
-@import "app/components/core/core.styles";
-@import "app/components/core/core.theme";
-@import "app/components/core/core.animations";
-@import "app/app";
-@import "app/components/home/home";
-@import "app/components/training/training";
-@import "app/components/experience/experience";
-@import "app/components/fleet/fleet";
-@import "app/components/navbar/navbar";
-@import "app/components/navigation/navigation";
+@import "app/components/core/core.variables.scss";
+@import "app/components/core/core.styles.scss";
+@import "app/components/core/core.theme.scss";
+@import "app/components/core/core.animations.scss";
+@import "app/app.scss";
+@import "app/components/home/home.scss";
+@import "app/components/training/training.scss";
+@import "app/components/experience/experience.scss";
+@import "app/components/fleet/fleet.scss";
+@import "app/components/navbar/navbar.scss";
+@import "app/components/navigation/navigation.scss";
 /*************************
 Global Styles
 **************************/

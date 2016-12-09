@@ -17,7 +17,8 @@
         'dsft.experience',
         'dsft.fleet',
         'dsft.navbar',
-        'dsft.navigation']);
+        'dsft.navigation',
+        'dsft.footer']);
 
     //Auth
 
@@ -30,6 +31,7 @@
     //Components
     angular.module('dsft.navbar', []);
     angular.module('dsft.navigation', []);
+    angular.module('dsft.footer', []);
 
     //Utils
 
