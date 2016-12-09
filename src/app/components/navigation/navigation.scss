@@ -1,4 +1,14 @@
 /*************************
+Local Imports
+**************************/
+@import "../core/core.variables.scss";
+/*************************
 Navigation Component Style
 **************************/
 .dsft-navigation {background-color: #323A45;}
+.dsft-navigationHeading{}
+.dsft-navigationHeadingInner{@include flexRowStartCenter}
+.dsft-navigationMenuList{}
+.dsft-navigationMenuListItem{}
+.dsft-navigationMenuListItemIcon{}
+.dsft-navigationMenuListItemHeading{colour: $white;}
