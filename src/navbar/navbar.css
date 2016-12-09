@@ -1,0 +1,40 @@
+/*************************
+Local Imports
+**************************/
+/*************************
+Core Variables
+**************************/
+/*************************
+Core Fonts
+**************************/
+/*************************
+Core Colors
+**************************/
+/*************************
+Core Components
+**************************/
+/*************************
+Core Borders
+**************************/
+/*************************
+Core Alerts
+**************************/
+/*************************
+Core Flexbox
+**************************/
+/*************************
+Navbar Component Style
+**************************/
+.dsft-navbar {
+  height: 100px;
+  background-color: #323A45; }
+
+.dsft-navbarInner {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.dsft-navbarMenuIcon {
+  color: #fff; }

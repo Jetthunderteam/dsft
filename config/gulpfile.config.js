@@ -21,11 +21,6 @@ module.exports = function() {
         appSCSS: [
             source+'*.scss',
             app+'*.scss',
-            source+'app/components/core/*.scss',
-            source+'app/components/home/*.scss',
-            source+'app/components/training/*.scss',
-            source+'app/components/experience/*.scss',
-            source+'app/components/fleet/*.scss',
             source+'app/components/**/*.scss'
         ],
         appJade: [

@@ -7,8 +7,9 @@
         .module('dsft')
         .config(appConfig);
 
-    appConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
-    function appConfig($stateProvider, $urlRouterProvider) {
+    appConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$mdThemingProvider'];
+    function appConfig($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+        $mdThemingProvider.disableTheming();
         $urlRouterProvider.when('', '/');
         $urlRouterProvider.otherwise('/');
         $stateProvider

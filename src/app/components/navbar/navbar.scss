@@ -1,0 +1,10 @@
+/*************************
+Local Imports
+**************************/
+@import "../core/core.variables";
+/*************************
+Navbar Component Style
+**************************/
+.dsft-navbar {height:100px; background-color: #323A45;}
+.dsft-navbarInner {height: 100px; @include flexRowBetweenCenter;}
+.dsft-navbarMenuIcon {color: $white;}

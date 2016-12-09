@@ -13,14 +13,9 @@
         var vm = this;
 
         /** Activate */
-        vm.$onInit = activate;
 
         /** View Bindings */
 
         /** Bindings */
-
-        function activate() {
-            console.log('Yo!');
-        }
     }
 })();

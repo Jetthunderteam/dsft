@@ -16,6 +16,7 @@
         'dsft.training',
         'dsft.experience',
         'dsft.fleet',
+        'dsft.navbar',
         'dsft.navigation']);
 
     //Auth
@@ -27,6 +28,7 @@
     angular.module('dsft.fleet', []);
 
     //Components
+    angular.module('dsft.navbar', []);
     angular.module('dsft.navigation', []);
 
     //Utils

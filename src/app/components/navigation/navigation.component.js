@@ -6,7 +6,7 @@
 
     angular
         .module('dsft.navigation')
-        .component('navigationComponent', navigationComponent);
+        .component('navigationComponent', navigationComponent());
 
     navigationComponent.$inject = [];
     function navigationComponent() {
@@ -16,7 +16,6 @@
             controller: 'NavigationCtrl',
             controllerAs: 'NavigationCtrl'
         };
-        console.log(component);
         return component;
     }
 })();
