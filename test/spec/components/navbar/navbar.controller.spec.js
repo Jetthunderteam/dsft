@@ -4,7 +4,7 @@
 describe('Navbar Controller Tests', spec);
 
 function spec() {
-    var scope, controller, mdSidenav, openSideNavToggle;
+    var scope, controller, openSideNavToggle;
 
     beforeEach(function() {
         module('dsft');
@@ -16,7 +16,7 @@ function spec() {
                 };
             });
         });
-        inject(function($rootScope, $controller, $mdSidenav) {
+        inject(function($rootScope, $controller) {
             scope = $rootScope.$new();
             controller = $controller('NavbarCtrl', {$scope: scope});
         })

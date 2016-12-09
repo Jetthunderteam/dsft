@@ -4,14 +4,12 @@
 describe('Application Config Tests', spec);
 
 function spec() {
-    var rootScope, state, injector, mockState;
+    var state, mockState;
 
     beforeEach(function() {
         module('dsft');
-        inject(function($rootScope, $state, $injector) {
-            rootScope = $rootScope;
+        inject(function($rootScope, $state) {
             state = $state;
-            injector = $injector;
         })
     });
 

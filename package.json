@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "author": "Matthew Farrow",
   "license": "MIT",
+  "scripts" : {
+    "launch-dev-install": "yarn install --ignore-engines",
+    "launch-prod-install": "yarn install --production --ignore-engines",
+    "launch-unit-test": "karma start config/karma.config.js"
+  },
   "dependencies": {
     "angular": "^1.5.9",
     "angular-animate": "^1.5.9",
