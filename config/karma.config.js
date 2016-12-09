@@ -29,6 +29,7 @@ module.exports = function(config){
         },
 
         files: [
+            libs+'jquery/dist/jquery.min.js',
             libs+'angular/angular.min.js',
             libs+'angular-animate/angular-animate.min.js',
             libs+'angular-aria/angular-aria.min.js',
@@ -40,6 +41,8 @@ module.exports = function(config){
             libs+'angular-ui-router/release/angular-ui-router.min.js',
             libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
             libs+'angular-material/angular-material.min.js',
+            libs+'angularfire/dist/angularfire.min.js',
+            libs+'firebase/firebase.js',
             libs+'angulartics/dist/angulartics.min.js',
             libs+'angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js',
             app+'app.module.js',

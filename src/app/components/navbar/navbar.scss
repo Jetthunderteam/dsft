@@ -6,5 +6,21 @@ Local Imports
 Navbar Component Style
 **************************/
 .dsft-navbar {height:100px; background-color: #323A45;}
-.dsft-navbarInner {height: 100px; @include flexRowBetweenCenter;}
+.dsft-navbarInner {height: 100%; @include flexRowBetweenCenter;}
 .dsft-navbarMenuIcon {color: $white;}
+/*************************
+Media Queries
+**************************/
+// Extra small devices (portrait phones, less than 34em)
+@media (max-width: 33.9em) {}
+
+// Small devices (landscape phones, less than 48em)
+@media (max-width: 47.9em) {
+  .dsft-navbar {height: 48px;}
+}
+
+// Medium devices (tablets, less than 62em)
+@media (max-width: 61.9em) {}
+
+// Large devices (desktops, less than 75em)
+@media (max-width: 74.9em) {}

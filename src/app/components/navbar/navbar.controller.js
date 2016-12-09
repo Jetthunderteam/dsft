@@ -8,8 +8,8 @@
         .module('dsft.navbar')
         .controller('NavbarCtrl', navbarCtrl);
 
-    navbarCtrl.$inject = ['$mdSidenav'];
-    function navbarCtrl($mdSidenav) {
+    navbarCtrl.$inject = ['$mdDialog', '$mdSidenav'];
+    function navbarCtrl($mdDialog, $mdSidenav) {
         var vm = this;
 
         /** Activate */
@@ -18,6 +18,8 @@
 
         /** Bindings */
         vm.openSideNav = openSideNav;
+        vm.openSignIn =openSignIn;
+        vm.openSignUp =openSignUp;
 
         /**
          * Opens the side navigation panel from the specified
@@ -26,6 +28,14 @@
          */
         function openSideNav(direction) {
             $mdSidenav(direction).toggle();
+        }
+
+        function openSignIn() {
+
+        }
+
+        function openSignUp() {
+
         }
     }
 })();

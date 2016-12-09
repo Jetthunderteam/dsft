@@ -1,29 +1,29 @@
 /*************************
- Navbar Controller Spec
+ Navigation Controller Spec
  **************************/
-describe('Navbar Controller Tests', spec);
+describe('Navigation Controller Tests', spec);
 
 function spec() {
-    var scope, controller, mockOpenSideNav;
+    var scope, controller, mockCloseSideNav;
 
     beforeEach(function() {
         module('dsft');
         module(function ($provide) {
-            mockOpenSideNav = jasmine.createSpy();
+            mockCloseSideNav = jasmine.createSpy();
             $provide.factory('$mdSidenav', function () {
                 return function () {
-                    return {toggle: mockOpenSideNav};
+                    return {toggle: mockCloseSideNav};
                 };
             });
         });
         inject(function($rootScope, $controller) {
             scope = $rootScope.$new();
-            controller = $controller('NavbarCtrl', {$scope: scope});
+            controller = $controller('NavigationCtrl', {$scope: scope});
         })
     });
 
     it('Should open the side navigation menu on calling "openSideNav"', function() {
-        controller.openSideNav('left');
-        expect(mockOpenSideNav).toHaveBeenCalled();
+        controller.closeSideNav('left');
+        expect(mockCloseSideNav).toHaveBeenCalled();
     });
 }
