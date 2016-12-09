@@ -2,7 +2,13 @@
 footer.dsft-footer
     div.container
         div.row
-            h1 Test Footer!
+            ul.dsft-footerSocialList
+                li.dsft-footerSocialListItem(ng-repeat='socialLink in FooterCtrl.socialLinks')
+                    a.dsft-footerSocialListItemAnchor(href='')
+                        i.dsft-footerSocialListItemIcon.fa.fa-rocket
 section.dsft-footerCopyRight
+    div.container
+        div.row
+            h4 @{{FooterCtrl.getYear()}} Devon & Somerset Flight Training
 
 // Footer

@@ -64,6 +64,7 @@ module.exports = function(config){
 
         ngHtml2JsPreprocessor: {
             cacheIdFromPath: function (filepath) {
+                console.log(filepath);
                 return filepath.substr(filepath.indexOf("src") + 4);
             },
             moduleName: 'dsft-templates'

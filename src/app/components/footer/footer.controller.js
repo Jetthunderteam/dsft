@@ -10,11 +10,12 @@
 
     FooterCtrl.$inject = ['utilsFactory'];
     function FooterCtrl(utilsFactory) {
-        var vm = this;
+        var vm = this, socialLinks = [{'link': 'facebook', 'url': ''}, {'link': 'twitter', 'url': ''}, {'link': 'google-plus', 'url': ''}];
 
         /** Activate */
 
         /** View Bindings */
+        vm.socialLinks = socialLinks;
 
         /** Bindings */
         vm.getYear = getYear;
