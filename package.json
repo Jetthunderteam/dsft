@@ -34,9 +34,12 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-angular-embed-templates": "^2.3.0",
     "gulp-bump": "^2.5.1",
     "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
     "gulp-jade": "^1.1.0",
     "gulp-modernizr": "^1.0.0-alpha",
     "gulp-ng-constant": "^2.0.0-2",

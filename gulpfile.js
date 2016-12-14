@@ -11,8 +11,11 @@
         browserSync = require('browser-sync'),
         bump = require('gulp-bump'),
         clean = require('gulp-clean'),
+        concat = require('gulp-concat'),
         config = loadGulpConfig(),
         constant = require('gulp-ng-constant'),
+        del = require('del'),
+        embedTemplate = require('gulp-angular-embed-templates'),
         jade = require('gulp-jade'),
         modernizr = require('gulp-modernizr'),
         sass = require('gulp-sass'),
@@ -39,6 +42,11 @@
      * Gulp Tasks
      **************************/
     gulp.task('build-project', buildProject);
+    gulp.task('bundle-dependant-js', bundleDependantJS);
+    gulp.task('bundle-dependant-css', bundleDependantCSS);
+    gulp.task('bundle-app-css', bundleAppCSS);
+    gulp.task('bundle-app-html', bundleAppHTML);
+    gulp.task('bundle-app-js', bundleAppJS);
     gulp.task('clean-project', cleanProject);
     gulp.task('compile-scss', compileSCSS);
     gulp.task('compile-jade', compileJade);
@@ -55,8 +63,68 @@
 
     }
 
-    function cleanProject() {
+    /**
+     * Bundles the external JS dependencies into a
+     * single modules file
+     */
+    function bundleDependantJS() {
+        util.log(util.colors.blue('Bundle dependant JS'));
+        return gulp.src(config.dependantJS)
+            .pipe(concat('external-modules.js'))
+            .pipe(gulp.dest(buildDir));
+    }
 
+    /**
+     * Bundles the external CSS dependencies into a
+     * single modules file
+     */
+    function bundleDependantCSS() {
+        util.log(util.colors.blue('Bundle dependant CSS'));
+        return gulp.src(config.dependentCSS)
+            .pipe(concat('external-modules.css'))
+            .pipe(gulp.dest(buildDir));
+    }
+
+    /**
+     * Bundles the application HTML files into their
+     * respective directories
+     */
+    function bundleAppHTML() {
+        util.log(util.colors.blue('Bundle application HTML'));
+        return gulp.src(config.appHTML)
+            .pipe(gulp.dest(buildDir+'comp'));
+    }
+
+    /**
+     * Bundles the application CSS into a
+     * single file
+     */
+    function bundleAppCSS() {
+        util.log(util.colors.blue('Bundle application JS'));
+        return gulp.src(config.appCSS)
+            .pipe(concat('app.css'))
+            .pipe(gulp.dest(buildDir));
+    }
+
+    /**
+     * Bundles the application JS into a
+     * single file
+     */
+    function bundleAppJS() {
+        util.log(util.colors.blue('Bundle application CSS'));
+        return gulp.src(config.appJS)
+            .pipe(embedTemplate())
+            .pipe(concat('app.js'))
+            .pipe(gulp.dest(buildDir));
+    }
+
+    /**
+     * Cleans the distribution directory of
+     * all currently built files
+     */
+    function cleanProject() {
+        util.log(util.colors.blue('Cleaning build directory'));
+        del([buildDir], {force: true});
     }
 
     /**
