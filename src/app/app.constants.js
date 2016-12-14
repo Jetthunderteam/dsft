@@ -1,3 +1,3 @@
-/**
- * Created by matthew.farrow on 06/12/2016.
- */
+(function() {
+    angular.module("dsft", []).constant("VERSION_NUMBER", "0.0.1");
+})();

@@ -20,6 +20,7 @@ module.exports = function() {
             libs+'angular-ui-router/release/angular-ui-router.min.js',
             libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
             libs+'angular-material/angular-material.min.js',
+            source+'modernizr.js',
             libs+'moment/min/moment.min.js',
             libs+'moment-timezone/builds/moment-timezone.min.js',
             libs+'angularfire/dist/angularfire.min.js',
@@ -28,7 +29,6 @@ module.exports = function() {
             libs+'angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js'
         ],
         dependentCSS: [
-            libs+'font-awesome/css/font-awesome.min.css',
             libs+'angular-material/angular-material.min.css',
             libs+'bootstrap/dist/css/bootstrap.min.css',
             libs+'animate.css/animate.min.css'
@@ -45,7 +45,9 @@ module.exports = function() {
         appHTML: [
             components+'**/*.html'
         ],
-        appIndex: [],
+        appIndex: [
+            'index.html'
+        ],
         appSCSS: [
             source+'*.scss',
             app+'*.scss',
