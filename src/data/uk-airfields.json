@@ -1,0 +1,1444 @@
+[
+    {
+        "icao": "EGPN",
+        "lat": 56.4525,
+        "lng": -3.0258,
+        "siteName": "Dundee Airport",
+        "sspaid": 17
+    },
+    {
+        "icao": "EGPO",
+        "lat": 58.214,
+        "lng": -6.325,
+        "siteName": "Stornoway",
+        "sspaid": 3026
+    },
+    {
+        "icao": "EGPR",
+        "lat": 57.02565,
+        "lng": -7.4489,
+        "siteName": "Barra Airport",
+        "sspaid": 3035
+    },
+    {
+        "icao": "EGPU",
+        "lat": 56.497,
+        "lng": -6.887,
+        "siteName": "Tiree",
+        "sspaid": 3100
+    },
+    {
+        "icao": "EHBK",
+        "lat": 50.917,
+        "lng": 5.783,
+        "siteName": "Maastricht Zuid Limburg",
+        "sspaid": 6380
+    },
+    {
+        "icao": "EIDW",
+        "lat": 53.433,
+        "lng": -6.25,
+        "siteName": "Dublin Airport",
+        "sspaid": 3969
+    },
+    {
+        "icao": "EGQK",
+        "lat": 57.6494,
+        "lng": -3.5606,
+        "siteName": "Kinloss",
+        "sspaid": 3066
+    },
+    {
+        "icao": "EGQL",
+        "lat": 56.377,
+        "lng": -2.862,
+        "siteName": "Leuchars",
+        "sspaid": 3171
+    },
+    {
+        "icao": "EGQM",
+        "lat": 55.421,
+        "lng": -1.6,
+        "siteName": "Boulmer",
+        "sspaid": 3240
+    },
+    {
+        "icao": "EGOM",
+        "lat": 55.05,
+        "lng": -2.553,
+        "siteName": "Spadeadam",
+        "sspaid": 3224
+    },
+    {
+        "icao": "EGOS",
+        "lat": 52.794,
+        "lng": -2.663,
+        "siteName": "Shawbury",
+        "sspaid": 3414
+    },
+    {
+        "icao": "EGOV",
+        "lat": 53.252,
+        "lng": -4.537,
+        "siteName": "Valley",
+        "sspaid": 3302
+    },
+    {
+        "icao": "EGOW",
+        "lat": 53.58,
+        "lng": -3.05,
+        "siteName": "Woodvale",
+        "sspaid": 102
+    },
+    {
+        "icao": "EICK",
+        "lat": 51.8413,
+        "lng": -8.4911,
+        "siteName": "Cork International",
+        "sspaid": 3955
+    },
+    {
+        "icao": "EHAM",
+        "lat": 52.3,
+        "lng": 4.767,
+        "siteName": "Amsterdam Schiphol Airport",
+        "sspaid": 6240
+    },
+    {
+        "icao": "EGPA",
+        "lat": 58.954,
+        "lng": -2.9,
+        "siteName": "Kirkwall",
+        "sspaid": 3017
+    },
+    {
+        "icao": "EGPB",
+        "lat": 59.879,
+        "lng": -1.298,
+        "siteName": "Sumburgh",
+        "sspaid": 3003
+    },
+    {
+        "icao": "EGPC",
+        "lat": 58.454,
+        "lng": -3.089,
+        "siteName": "Wick John O Groats Airport",
+        "sspaid": 3075
+    },
+    {
+        "icao": "EHRD",
+        "lat": 51.9596,
+        "lng": 4.4372,
+        "siteName": "Rotterdam The Hague Airport",
+        "sspaid": 6344
+    },
+    {
+        "icao": "EGPD",
+        "lat": 57.206,
+        "lng": -2.202,
+        "siteName": "Aberdeen Airport",
+        "sspaid": 3091
+    },
+    {
+        "icao": "EGPE",
+        "lat": 57.5424,
+        "lng": -4.0475,
+        "siteName": "Inverness Airport",
+        "sspaid": 23
+    },
+    {
+        "icao": "EGPF",
+        "lat": 55.8667,
+        "lng": -4.4333,
+        "siteName": "Glasgow Airport",
+        "sspaid": 3140
+    },
+    {
+        "icao": "EGPG",
+        "lat": 55.97,
+        "lng": -3.97,
+        "siteName": "Cumbernauld",
+        "sspaid": 103
+    },
+    {
+        "icao": "EGPH",
+        "lat": 55.951,
+        "lng": -3.347,
+        "siteName": "Edinburgh Airport",
+        "sspaid": 3160
+    },
+    {
+        "icao": "EGPI",
+        "lat": 55.681,
+        "lng": -6.256,
+        "siteName": "Islay Airport",
+        "sspaid": 3105
+    },
+    {
+        "icao": "EGPK",
+        "lat": 55.5078,
+        "lng": -4.5867,
+        "siteName": "Prestwick",
+        "sspaid": 32
+    },
+    {
+        "icao": "EGPL",
+        "lat": 57.475,
+        "lng": -7.383,
+        "siteName": "Benbecula",
+        "sspaid": 3022
+    },
+    {
+        "icao": "EGPM",
+        "lat": 60.4322,
+        "lng": -1.2992,
+        "siteName": "Scatsta",
+        "sspaid": 33
+    },
+    {
+        "icao": "EGBB",
+        "lat": 52.4539,
+        "lng": -1.7481,
+        "siteName": "Birmingham Airport",
+        "sspaid": 9
+    },
+    {
+        "icao": "EGBE",
+        "lat": 52.3697,
+        "lng": -1.4797,
+        "siteName": "Coventry Airport",
+        "sspaid": 16
+    },
+    {
+        "icao": "EGBG",
+        "lat": 52.6,
+        "lng": -1.03,
+        "siteName": "Leicester",
+        "sspaid": 108
+    },
+    {
+        "icao": "EGBJ",
+        "lat": 51.8942,
+        "lng": -2.1672,
+        "siteName": "Gloucestershire Airport",
+        "sspaid": 99038
+    },
+    {
+        "icao": "EGRZ",
+        "lat": 50.911,
+        "lng": 0.109,
+        "siteName": "Ringmer Gliding",
+        "sspaid": 6005653
+    },
+    {
+        "icao": "EGBK",
+        "lat": 52.3,
+        "lng": -0.8,
+        "siteName": "Northampton / Sywell",
+        "sspaid": 132
+    },
+    {
+        "icao": "EGBN",
+        "lat": 52.92,
+        "lng": -1.08,
+        "siteName": "Nottingham",
+        "sspaid": 322581
+    },
+    {
+        "icao": "EGBO",
+        "lat": 52.52,
+        "lng": -2.25,
+        "siteName": "Wolverhampton Aerodrome",
+        "sspaid": 56
+    },
+    {
+        "icao": "EGBP",
+        "lat": 51.668,
+        "lng": -2.057,
+        "siteName": "Cotswold Airport",
+        "sspaid": 6001042
+    },
+    {
+        "icao": "EGSC",
+        "lat": 52.205,
+        "lng": 0.175,
+        "siteName": "Cambridge Airport",
+        "sspaid": 12
+    },
+    {
+        "icao": "EGBS",
+        "lat": 52.23,
+        "lng": -2.88,
+        "siteName": "Shobdon",
+        "sspaid": 57
+    },
+    {
+        "icao": "ELLX",
+        "lat": 49.616,
+        "lng": 6.216,
+        "siteName": "Luxembourg International",
+        "sspaid": 6590
+    },
+    {
+        "icao": "LFLB",
+        "lat": 45.6333,
+        "lng": 5.8667,
+        "siteName": "Chamberyaix Les Bains Voglans",
+        "sspaid": 7491
+    },
+    {
+        "icao": "EGBT",
+        "lat": 52.033,
+        "lng": -1.1,
+        "siteName": "Turweston",
+        "sspaid": 6001001
+    },
+    {
+        "icao": "EGSF",
+        "lat": 52.47,
+        "lng": -0.25,
+        "siteName": "Peterborough / Conington",
+        "sspaid": 113
+    },
+    {
+        "icao": "EGSG",
+        "lat": 51.65,
+        "lng": 0.15,
+        "siteName": "Stapleford",
+        "sspaid": 114
+    },
+    {
+        "icao": "EGSH",
+        "lat": 52.6761,
+        "lng": 1.2828,
+        "siteName": "Norwich Airport",
+        "sspaid": 30
+    },
+    {
+        "icao": "EGBW",
+        "lat": 52.2,
+        "lng": -1.62,
+        "siteName": "Wellesbourne Mountford",
+        "sspaid": 58
+    },
+    {
+        "icao": "LFLL",
+        "lat": 45.7264,
+        "lng": 5.0908,
+        "siteName": "Lyon-satolas",
+        "sspaid": 7481
+    },
+    {
+        "icao": "EGSL",
+        "lat": 51.896,
+        "lng": 0.453,
+        "siteName": "Andrewsfield",
+        "sspaid": 3684
+    },
+    {
+        "icao": "LFLP",
+        "lat": 45.93,
+        "lng": 6.1,
+        "siteName": "Annecy",
+        "sspaid": 301997
+    },
+    {
+        "icao": "EGAA",
+        "lat": 54.664,
+        "lng": -6.224,
+        "siteName": "Belfast International Airport",
+        "sspaid": 3917
+    },
+    {
+        "icao": "EGAC",
+        "lat": 54.613,
+        "lng": -5.877,
+        "siteName": "Belfast City Airport",
+        "sspaid": 8
+    },
+    {
+        "icao": "EGQS",
+        "lat": 57.712,
+        "lng": -3.322,
+        "siteName": "Lossiemouth",
+        "sspaid": 3068
+    },
+    {
+        "icao": "EGAE",
+        "lat": 55.0428,
+        "lng": -7.1608,
+        "siteName": "City Of Derry Airport",
+        "sspaid": 27
+    },
+    {
+        "icao": "LFKF",
+        "lat": 41.5006,
+        "lng": 9.0978,
+        "siteName": "Figari",
+        "sspaid": 322190
+    },
+    {
+        "icao": "EGTR",
+        "lat": 51.65,
+        "lng": -0.32,
+        "siteName": "Elstree",
+        "sspaid": 130
+    },
+    {
+        "icao": "LSGG",
+        "lat": 46.25,
+        "lng": 6.133,
+        "siteName": "Geneve-cointrin",
+        "sspaid": 6700
+    },
+    {
+        "icao": "EDNY",
+        "lat": 47.6713,
+        "lng": 9.5115,
+        "siteName": "Friedrichshafen",
+        "sspaid": 322207
+    },
+    {
+        "icao": "EGDM",
+        "lat": 51.161,
+        "lng": -1.754,
+        "siteName": "Boscombe Down",
+        "sspaid": 3746
+    },
+    {
+        "icao": "EGUB",
+        "lat": 51.62,
+        "lng": -1.097,
+        "siteName": "Benson",
+        "sspaid": 3658
+    },
+    {
+        "icao": "LSGS",
+        "lat": 46.2199694,
+        "lng": 7.3309937,
+        "siteName": "Sion",
+        "sspaid": 6720
+    },
+    {
+        "icao": "EGDR",
+        "lat": 50.085,
+        "lng": -5.257,
+        "siteName": "Culdrose",
+        "sspaid": 3809
+    },
+    {
+        "icao": "EGUC",
+        "lat": 52.139,
+        "lng": -4.571,
+        "siteName": "Aberporth",
+        "sspaid": 3502
+    },
+    {
+        "icao": "EGDU",
+        "lat": 51.866,
+        "lng": -0.548,
+        "siteName": "Dunstable",
+        "sspaid": 373340
+    },
+    {
+        "icao": "EGDX",
+        "lat": 51.405,
+        "lng": -3.44,
+        "siteName": "St-athan",
+        "sspaid": 3716
+    },
+    {
+        "icao": "EGDY",
+        "lat": 51.006,
+        "lng": -2.64,
+        "siteName": "Yeovilton",
+        "sspaid": 3853
+    },
+    {
+        "icao": "ENBR",
+        "lat": 60.2934,
+        "lng": 5.2181,
+        "siteName": "Bergen-flesland",
+        "sspaid": 1311
+    },
+    {
+        "icao": "EGUO",
+        "lat": 51.43917,
+        "lng": -2.28639,
+        "siteName": "Colerne",
+        "sspaid": 53
+    },
+    {
+        "icao": "EGCB",
+        "lat": 53.47177,
+        "lng": -2.3888,
+        "siteName": "Manchester City Airport / Heliport",
+        "sspaid": 59
+    },
+    {
+        "icao": "EGSS",
+        "lat": 51.88,
+        "lng": 0.225,
+        "siteName": "Stansted",
+        "sspaid": 3683
+    },
+    {
+        "icao": "EGCC",
+        "lat": 53.356,
+        "lng": -2.279,
+        "siteName": "Manchester Airport",
+        "sspaid": 3334
+    },
+    {
+        "icao": "LFLS",
+        "lat": 45.3629,
+        "lng": 5.3294,
+        "siteName": "Grenoble Saint-geoirs",
+        "sspaid": 322245
+    },
+    {
+        "icao": "EGSU",
+        "lat": 52.08,
+        "lng": 0.13,
+        "siteName": "Duxford",
+        "sspaid": 122
+    },
+    {
+        "icao": "LFLY",
+        "lat": 45.733,
+        "lng": 4.933,
+        "siteName": "Lyon-bron",
+        "sspaid": 6000252
+    },
+    {
+        "icao": "EGCF",
+        "lat": 53.57,
+        "lng": -0.85,
+        "siteName": "Sandtoft",
+        "sspaid": 61
+    },
+    {
+        "icao": "EHEH",
+        "lat": 51.45,
+        "lng": 5.417,
+        "siteName": "Eindhoven Welschap Airport",
+        "sspaid": 6370
+    },
+    {
+        "icao": "EGCJ",
+        "lat": 53.78,
+        "lng": -1.22,
+        "siteName": "Sherburn-in-elmet",
+        "sspaid": 62
+    },
+    {
+        "icao": "EGCN",
+        "lat": 53.4747,
+        "lng": -1.0044,
+        "siteName": "Doncaster Sheffield",
+        "sspaid": 301603
+    },
+    {
+        "icao": "EGTB",
+        "lat": 51.62,
+        "lng": -0.8,
+        "siteName": "Wycombe Air Park / Booker",
+        "sspaid": 124
+    },
+    {
+        "icao": "EGTC",
+        "lat": 52.0703,
+        "lng": -0.6267,
+        "siteName": "Cranfield",
+        "sspaid": 7
+    },
+    {
+        "icao": "LFMD",
+        "lat": 43.55,
+        "lng": 6.95,
+        "siteName": "Cannes - Mandelieu",
+        "sspaid": 322087
+    },
+    {
+        "icao": "EGTE",
+        "lat": 50.7344,
+        "lng": -3.4139,
+        "siteName": "Exeter Airport",
+        "sspaid": 19
+    },
+    {
+        "icao": "EGTF",
+        "lat": 51.35,
+        "lng": -0.55,
+        "siteName": "Fairoaks",
+        "sspaid": 126
+    },
+    {
+        "icao": "EGCV",
+        "lat": 52.83,
+        "lng": -2.77,
+        "siteName": "Sleap",
+        "sspaid": 67
+    },
+    {
+        "icao": "EGTH",
+        "lat": 52.0867,
+        "lng": -0.31861,
+        "siteName": "Old Warden",
+        "sspaid": 302063
+    },
+    {
+        "icao": "LFMN",
+        "lat": 43.6584,
+        "lng": 7.2159,
+        "siteName": "Nice Cote D'azur International",
+        "sspaid": 7690
+    },
+    {
+        "icao": "EGTK",
+        "lat": 51.8356,
+        "lng": -1.3204,
+        "siteName": "Oxford Airport",
+        "sspaid": 127
+    },
+    {
+        "icao": "LFML",
+        "lat": 43.4356,
+        "lng": 5.2136,
+        "siteName": "Marseille Marignane-provence",
+        "sspaid": 7650
+    },
+    {
+        "icao": "EGTO",
+        "lat": 51.35,
+        "lng": 0.5,
+        "siteName": "Rochester",
+        "sspaid": 128
+    },
+    {
+        "icao": "EGFF",
+        "lat": 51.4,
+        "lng": -3.343,
+        "siteName": "Cardiff Int. Airport",
+        "sspaid": 3715
+    },
+    {
+        "icao": "EGFH",
+        "lat": 51.6053,
+        "lng": -4.0678,
+        "siteName": "Swansea Airport",
+        "sspaid": 36
+    },
+    {
+        "icao": "LSZB",
+        "lat": 46.92,
+        "lng": 7.5,
+        "siteName": "Berne Int.",
+        "sspaid": 322030
+    },
+    {
+        "icao": "LFPB",
+        "lat": 48.9647,
+        "lng": 2.438,
+        "siteName": "Paris Le Bourget",
+        "sspaid": 7150
+    },
+    {
+        "icao": "LFPG",
+        "lat": 49.0128,
+        "lng": 2.55,
+        "siteName": "Paris Cdg Airport",
+        "sspaid": 7157
+    },
+    {
+        "icao": "LSZH",
+        "lat": 47.4647,
+        "lng": 8.5492,
+        "siteName": "Zurich-kloten",
+        "sspaid": 6670
+    },
+    {
+        "icao": "LFPO",
+        "lat": 48.717,
+        "lng": 2.393,
+        "siteName": "Paris Orly",
+        "sspaid": 7149
+    },
+    {
+        "icao": "LFPN",
+        "lat": 48.75,
+        "lng": 2.111,
+        "siteName": "Toussous-le-noble",
+        "sspaid": 6000278
+    },
+    {
+        "icao": "EGGD",
+        "lat": 51.3828,
+        "lng": -2.7192,
+        "siteName": "Bristol Airport",
+        "sspaid": 11
+    },
+    {
+        "icao": "EGEC",
+        "lat": 55.441,
+        "lng": -5.699,
+        "siteName": "Campbeltown Airport",
+        "sspaid": 3111
+    },
+    {
+        "icao": "EHGG",
+        "lat": 53.133,
+        "lng": 6.583,
+        "siteName": "Groningen Eelde Airport",
+        "sspaid": 6280
+    },
+    {
+        "icao": "EGUW",
+        "lat": 52.123,
+        "lng": 0.961,
+        "siteName": "Wattisham",
+        "sspaid": 3590
+    },
+    {
+        "icao": "EGEO",
+        "lat": 56.4634,
+        "lng": -5.3994,
+        "siteName": "Oban Airport",
+        "sspaid": 301886
+    },
+    {
+        "icao": "EGVA",
+        "lat": 51.68,
+        "lng": -1.78,
+        "siteName": "Fairford",
+        "sspaid": 134
+    },
+    {
+        "icao": "LFOB",
+        "lat": 49.458,
+        "lng": 2.114,
+        "siteName": "Beauvais-tille",
+        "sspaid": 301937
+    },
+    {
+        "icao": "EGET",
+        "lat": 60.189468,
+        "lng": -1.246519,
+        "siteName": "Lerwick/tingwall Airport",
+        "sspaid": 373339
+    },
+    {
+        "icao": "EBLG",
+        "lat": 50.6374,
+        "lng": 5.4432,
+        "siteName": "Liege",
+        "sspaid": 322452
+    },
+    {
+        "icao": "EGVN",
+        "lat": 51.758,
+        "lng": -1.576,
+        "siteName": "Brize Norton",
+        "sspaid": 3649
+    },
+    {
+        "icao": "EGVO",
+        "lat": 51.238,
+        "lng": -0.944,
+        "siteName": "Odiham",
+        "sspaid": 3761
+    },
+    {
+        "icao": "EGVP",
+        "lat": 51.149,
+        "lng": -1.57,
+        "siteName": "Middle Wallop",
+        "sspaid": 3749
+    },
+    {
+        "icao": "EGFC",
+        "lat": 51.467,
+        "lng": -3.133,
+        "siteName": "Cardiff Heliport",
+        "sspaid": 6001004
+    },
+    {
+        "icao": "EGHF",
+        "lat": 50.81533,
+        "lng": -1.20731,
+        "siteName": "Lee On Solent",
+        "sspaid": 373338
+    },
+    {
+        "icao": "EGXV",
+        "lat": 53.874,
+        "lng": -0.44,
+        "siteName": "Leconfield",
+        "sspaid": 3384
+    },
+    {
+        "icao": "EGXW",
+        "lat": 53.175,
+        "lng": -0.521,
+        "siteName": "Waddington",
+        "sspaid": 3377
+    },
+    {
+        "icao": "EGHH",
+        "lat": 50.779,
+        "lng": -1.835,
+        "siteName": "Bournemouth Airport",
+        "sspaid": 3862
+    },
+    {
+        "icao": "EGHI",
+        "lat": 50.9503,
+        "lng": -1.3567,
+        "siteName": "Southampton Airport",
+        "sspaid": 3
+    },
+    {
+        "icao": "EGXZ",
+        "lat": 54.204,
+        "lng": -1.39,
+        "siteName": "Topcliffe",
+        "sspaid": 3265
+    },
+    {
+        "icao": "EGHJ",
+        "lat": 50.68,
+        "lng": -1.1,
+        "siteName": "Bembridge",
+        "sspaid": 76
+    },
+    {
+        "icao": "EGHL",
+        "lat": 51.18,
+        "lng": -1.03,
+        "siteName": "Lasham",
+        "sspaid": 77
+    },
+    {
+        "icao": "EGHN",
+        "lat": 50.65,
+        "lng": -1.18,
+        "siteName": "Sandown (isle Of Wight)",
+        "sspaid": 78
+    },
+    {
+        "icao": "LFRC",
+        "lat": 49.65,
+        "lng": -1.467,
+        "siteName": "Cherbourg Maupertus",
+        "sspaid": 6000287
+    },
+    {
+        "icao": "EGHO",
+        "lat": 51.22,
+        "lng": -1.6,
+        "siteName": "Thruxton",
+        "sspaid": 79
+    },
+    {
+        "icao": "LFRB",
+        "lat": 48.449,
+        "lng": -4.416,
+        "siteName": "Brest-guipavas",
+        "sspaid": 7110
+    },
+    {
+        "icao": "EGHQ",
+        "lat": 50.4407,
+        "lng": -5.0028,
+        "siteName": "Newquay Cornwall Airport",
+        "sspaid": 352816
+    },
+    {
+        "icao": "EGHR",
+        "lat": 50.87,
+        "lng": -0.77,
+        "siteName": "Chichester / Goodwood",
+        "sspaid": 81
+    },
+    {
+        "icao": "LFRG",
+        "lat": 49.367,
+        "lng": 0.167,
+        "siteName": "Deauville-saint Gatien",
+        "sspaid": 6000289
+    },
+    {
+        "icao": "EGYD",
+        "lat": 53.031,
+        "lng": -0.502,
+        "siteName": "Cranwell",
+        "sspaid": 3379
+    },
+    {
+        "icao": "LFAT",
+        "lat": 50.517,
+        "lng": 1.633,
+        "siteName": "Le Touquet-paris Plage",
+        "sspaid": 6000214
+    },
+    {
+        "icao": "LFRD",
+        "lat": 48.583,
+        "lng": -2.083,
+        "siteName": "Dinardpleurtuit-st. Malo",
+        "sspaid": 6000288
+    },
+    {
+        "icao": "LFRK",
+        "lat": 49.1833,
+        "lng": -0.45,
+        "siteName": "Caen-carpiquet",
+        "sspaid": 7027
+    },
+    {
+        "icao": "EGYJ",
+        "lat": 53.933,
+        "lng": -1.167,
+        "siteName": "York / Rufforth",
+        "sspaid": 6001041
+    },
+    {
+        "icao": "LFRN",
+        "lat": 48.0695,
+        "lng": -1.7348,
+        "siteName": "Rennes Aeroport Saint Jaques",
+        "sspaid": 7130
+    },
+    {
+        "icao": "LFRM",
+        "lat": 47.95,
+        "lng": 0.2,
+        "siteName": "Le Mans-arnage Airport",
+        "sspaid": 376689
+    },
+    {
+        "icao": "EGYM",
+        "lat": 52.651,
+        "lng": 0.569,
+        "siteName": "Marham",
+        "sspaid": 3482
+    },
+    {
+        "icao": "LFRS",
+        "lat": 47.1667,
+        "lng": -1.6,
+        "siteName": "Nantes Aeroport Atlantique",
+        "sspaid": 7222
+    },
+    {
+        "icao": "EHKD",
+        "lat": 52.917,
+        "lng": 4.783,
+        "siteName": "De Kooy-den Helder",
+        "sspaid": 6235
+    },
+    {
+        "icao": "LFBD",
+        "lat": 44.8283,
+        "lng": -0.7156,
+        "siteName": "Bordeaux-merignac",
+        "sspaid": 7510
+    },
+    {
+        "icao": "EGWU",
+        "lat": 51.548,
+        "lng": -0.415,
+        "siteName": "Northolt",
+        "sspaid": 3672
+    },
+    {
+        "icao": "LSZS",
+        "lat": 46.52627,
+        "lng": 9.87941,
+        "siteName": "Samedam",
+        "sspaid": 6792
+    },
+    {
+        "icao": "EIKN",
+        "lat": 53.9,
+        "lng": -8.817,
+        "siteName": "Knock (connaught) Airport",
+        "sspaid": 3973
+    },
+    {
+        "icao": "EGGP",
+        "lat": 53.3336,
+        "lng": -2.85,
+        "siteName": "Liverpool John Lennon Airport",
+        "sspaid": 26
+    },
+    {
+        "icao": "EGXC",
+        "lat": 53.094,
+        "lng": -0.171,
+        "siteName": "Coningsby",
+        "sspaid": 3391
+    },
+    {
+        "icao": "EGXD",
+        "lat": 54.134,
+        "lng": -1.414,
+        "siteName": "Dishforth Airfield",
+        "sspaid": 3261
+    },
+    {
+        "icao": "EGXE",
+        "lat": 54.296,
+        "lng": -1.53,
+        "siteName": "Leeming",
+        "sspaid": 3257
+    },
+    {
+        "icao": "EGGW",
+        "lat": 51.8744,
+        "lng": -0.3683,
+        "siteName": "Luton Airport",
+        "sspaid": 2
+    },
+    {
+        "icao": "LFQQ",
+        "lat": 50.5619,
+        "lng": 3.0894,
+        "siteName": "Lille",
+        "sspaid": 7015
+    },
+    {
+        "icao": "EGXP",
+        "lat": 53.307,
+        "lng": -0.546,
+        "siteName": "Scampton",
+        "sspaid": 3373
+    },
+    {
+        "icao": "EGHA",
+        "lat": 50.97,
+        "lng": -2.15,
+        "siteName": "Compton Abbas",
+        "sspaid": 73
+    },
+    {
+        "icao": "EGHC",
+        "lat": 50.1,
+        "lng": -5.67,
+        "siteName": "Lands End (st. Just)",
+        "sspaid": 74
+    },
+    {
+        "icao": "EGXT",
+        "lat": 52.6111,
+        "lng": -0.459,
+        "siteName": "Wittering",
+        "sspaid": 3462
+    },
+    {
+        "icao": "EGHE",
+        "lat": 49.913,
+        "lng": -6.301,
+        "siteName": "Scilly St Marys",
+        "sspaid": 3803
+    },
+    {
+        "icao": "EGXU",
+        "lat": 54.045,
+        "lng": -1.25,
+        "siteName": "Linton On Ouse",
+        "sspaid": 3266
+    },
+    {
+        "icao": "EDDF",
+        "lat": 50.05,
+        "lng": 8.6,
+        "siteName": "Frankfurt/main International",
+        "sspaid": 10637
+    },
+    {
+        "icao": "EGJJ",
+        "lat": 49.2079,
+        "lng": -2.1955,
+        "siteName": "Jersey",
+        "sspaid": 3895
+    },
+    {
+        "icao": "EDDH",
+        "lat": 53.6304,
+        "lng": 9.9882,
+        "siteName": "Hamburg Fuhlsbuettel International",
+        "sspaid": 10147
+    },
+    {
+        "icao": "EINN",
+        "lat": 52.699,
+        "lng": -8.916,
+        "siteName": "Shannon Airport",
+        "sspaid": 3962
+    },
+    {
+        "icao": "EDDK",
+        "lat": 50.8659,
+        "lng": 7.1427,
+        "siteName": "Koln/bonn International",
+        "sspaid": 10513
+    },
+    {
+        "icao": "EDDL",
+        "lat": 51.296,
+        "lng": 6.7687,
+        "siteName": "Duesseldorf International",
+        "sspaid": 10400
+    },
+    {
+        "icao": "EDDM",
+        "lat": 48.3538,
+        "lng": 11.7861,
+        "siteName": "Munich Int.",
+        "sspaid": 322548
+    },
+    {
+        "icao": "EDDN",
+        "lat": 49.4987,
+        "lng": 11.0669,
+        "siteName": "Nurnberg International",
+        "sspaid": 10763
+    },
+    {
+        "icao": "EDDP",
+        "lat": 51.4167,
+        "lng": 12.2333,
+        "siteName": "Leipzig/halle",
+        "sspaid": 10469
+    },
+    {
+        "icao": "EKBI",
+        "lat": 55.7333,
+        "lng": 9.1667,
+        "siteName": "Billund",
+        "sspaid": 6104
+    },
+    {
+        "icao": "EDDS",
+        "lat": 48.6898,
+        "lng": 9.2216,
+        "siteName": "Stuttgart Int",
+        "sspaid": 322824
+    },
+    {
+        "icao": "EDDT",
+        "lat": 52.5597,
+        "lng": 13.2877,
+        "siteName": "Berlin - Tegel Int.",
+        "sspaid": 322028
+    },
+    {
+        "icao": "EDDV",
+        "lat": 52.46,
+        "lng": 9.68,
+        "siteName": "Hannover Int.",
+        "sspaid": 322269
+    },
+    {
+        "icao": "EGKA",
+        "lat": 50.836,
+        "lng": -0.292,
+        "siteName": "Shoreham",
+        "sspaid": 3876
+    },
+    {
+        "icao": "EGKB",
+        "lat": 51.3215,
+        "lng": 0.0295,
+        "siteName": "Biggin Hill",
+        "sspaid": 4
+    },
+    {
+        "icao": "EBOS",
+        "lat": 51.1998,
+        "lng": 2.874,
+        "siteName": "Ostend",
+        "sspaid": 6407
+    },
+    {
+        "icao": "LFBO",
+        "lat": 43.6291,
+        "lng": 1.3638,
+        "siteName": "Toulouse-blagnac",
+        "sspaid": 7630
+    },
+    {
+        "icao": "LFSD",
+        "lat": 47.2689,
+        "lng": 5.09,
+        "siteName": "Dijon-longvic",
+        "sspaid": 7280
+    },
+    {
+        "icao": "LFSB",
+        "lat": 47.5896,
+        "lng": 7.5299,
+        "siteName": "Baselmulhouse Euroairport",
+        "sspaid": 7299
+    },
+    {
+        "icao": "ENGM",
+        "lat": 60.2,
+        "lng": 11.083,
+        "siteName": "Oslo-gardermoen",
+        "sspaid": 1384
+    },
+    {
+        "icao": "EGJA",
+        "lat": 49.7,
+        "lng": -2.22,
+        "siteName": "Alderney Airport",
+        "sspaid": 82
+    },
+    {
+        "icao": "EGJB",
+        "lat": 49.44,
+        "lng": -2.6,
+        "siteName": "Guernsey",
+        "sspaid": 3894
+    },
+    {
+        "icao": "EDDB",
+        "lat": 52.38,
+        "lng": 13.5225,
+        "siteName": "Berlin - Schonefeld Int.",
+        "sspaid": 322027
+    },
+    {
+        "icao": "EGLK",
+        "lat": 51.32,
+        "lng": -0.85,
+        "siteName": "Blackbushe",
+        "sspaid": 88
+    },
+    {
+        "icao": "EGLL",
+        "lat": 51.479,
+        "lng": -0.449,
+        "siteName": "Heathrow",
+        "sspaid": 3772
+    },
+    {
+        "icao": "EGLM",
+        "lat": 51.5,
+        "lng": -0.77,
+        "siteName": "White Waltham",
+        "sspaid": 89
+    },
+    {
+        "icao": "ENZV",
+        "lat": 58.8768,
+        "lng": 5.6379,
+        "siteName": "Stavanger-sola",
+        "sspaid": 1415
+    },
+    {
+        "icao": "EGLW",
+        "lat": 51.47,
+        "lng": -0.17,
+        "siteName": "London (battersea) Heliport",
+        "sspaid": 91
+    },
+    {
+        "icao": "EBBR",
+        "lat": 50.9,
+        "lng": 4.533,
+        "siteName": "Brussels National Airport",
+        "sspaid": 6451
+    },
+    {
+        "icao": "EGMC",
+        "lat": 51.5714,
+        "lng": 0.6956,
+        "siteName": "Southend Airport",
+        "sspaid": 1
+    },
+    {
+        "icao": "EGMD",
+        "lat": 50.9561,
+        "lng": 0.9392,
+        "siteName": "Lydd",
+        "sspaid": 6
+    },
+    {
+        "icao": "EGKK",
+        "lat": 51.151,
+        "lng": -0.191,
+        "siteName": "Gatwick Airport",
+        "sspaid": 3776
+    },
+    {
+        "icao": "EGKR",
+        "lat": 51.215,
+        "lng": -0.135,
+        "siteName": "Redhill",
+        "sspaid": 3780
+    },
+    {
+        "icao": "EKCH",
+        "lat": 55.617,
+        "lng": 12.65,
+        "siteName": "Copenhagen-kastrup",
+        "sspaid": 6180
+    },
+    {
+        "icao": "EBAW",
+        "lat": 51.2,
+        "lng": 4.467,
+        "siteName": "Antwerpen/deurne",
+        "sspaid": 6450
+    },
+    {
+        "icao": "EGLA",
+        "lat": 50.5,
+        "lng": -4.67,
+        "siteName": "Bodmin",
+        "sspaid": 86
+    },
+    {
+        "icao": "EGLC",
+        "lat": 51.5048,
+        "lng": 0.058,
+        "siteName": "London City Airport",
+        "sspaid": 5
+    },
+    {
+        "icao": "EGLD",
+        "lat": 51.58,
+        "lng": -0.52,
+        "siteName": "Denham",
+        "sspaid": 87
+    },
+    {
+        "icao": "EGLF",
+        "lat": 51.279,
+        "lng": -0.772,
+        "siteName": "Farnborough",
+        "sspaid": 3768
+    },
+    {
+        "icao": "EGLH",
+        "lat": 51.653,
+        "lng": 0.0183,
+        "siteName": "Lippits Hill",
+        "sspaid": 6005654
+    },
+    {
+        "icao": "EGNL",
+        "lat": 54.13,
+        "lng": -3.27,
+        "siteName": "Barrow / Walney Island",
+        "sspaid": 97
+    },
+    {
+        "icao": "EGNM",
+        "lat": 53.8658,
+        "lng": -1.6606,
+        "siteName": "Leeds Bradford International Airport",
+        "sspaid": 25
+    },
+    {
+        "icao": "EGNO",
+        "lat": 53.7446,
+        "lng": -2.8854,
+        "siteName": "Warton",
+        "sspaid": 98
+    },
+    {
+        "icao": "EGNR",
+        "lat": 53.174,
+        "lng": -2.986,
+        "siteName": "Hawarden",
+        "sspaid": 3321
+    },
+    {
+        "icao": "EGNS",
+        "lat": 54.0849,
+        "lng": -4.6321,
+        "siteName": "Ronaldsway",
+        "sspaid": 3204
+    },
+    {
+        "icao": "EGNT",
+        "lat": 55.0375,
+        "lng": -1.6917,
+        "siteName": "Newcastle Airport",
+        "sspaid": 29
+    },
+    {
+        "icao": "EGNV",
+        "lat": 54.5125,
+        "lng": -1.4235,
+        "siteName": "Durham Tees Valley Airport",
+        "sspaid": 37
+    },
+    {
+        "icao": "EGNX",
+        "lat": 52.8311,
+        "lng": -1.3267,
+        "siteName": "East Midlands Airport",
+        "sspaid": 18
+    },
+    {
+        "icao": "EBCI",
+        "lat": 50.467,
+        "lng": 4.45,
+        "siteName": "Charleroi - Brussels South",
+        "sspaid": 6449
+    },
+    {
+        "icao": "EKEB",
+        "lat": 55.5259,
+        "lng": 8.5534,
+        "siteName": "Esbjerg International",
+        "sspaid": 6080
+    },
+    {
+        "icao": "EGMW",
+        "lat": 52.47345,
+        "lng": 1.755183,
+        "siteName": "Lowestoft",
+        "sspaid": 302080
+    },
+    {
+        "icao": "EGNC",
+        "lat": 54.9375,
+        "lng": -2.8092,
+        "siteName": "Carlisle Airport",
+        "sspaid": 14
+    },
+    {
+        "icao": "EGNE",
+        "lat": 53.28,
+        "lng": -0.95,
+        "siteName": "Retford / Gamston",
+        "sspaid": 95
+    },
+    {
+        "icao": "EGNF",
+        "lat": 53.32,
+        "lng": -1.2,
+        "siteName": "Netherthorpe",
+        "sspaid": 96
+    },
+    {
+        "icao": "EGNH",
+        "lat": 53.7714,
+        "lng": -3.0286,
+        "siteName": "Blackpool Airport",
+        "sspaid": 10
+    },
+    {
+        "icao": "EGNJ",
+        "lat": 53.5797,
+        "lng": -0.3472,
+        "siteName": "Humberside Airport",
+        "sspaid": 22
+    }
+]

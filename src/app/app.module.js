@@ -8,6 +8,7 @@
         'ngAnimate',
         'ngMaterial',
         'ngSanitize',
+        'rx',
         'ui.bootstrap',
         'ui.router',
         'ui-leaflet',

@@ -55,6 +55,8 @@ module.exports = function() {
             libs+'angular-sanitize/angular-sanitize.min.js',
             libs+'angular-touch/angular-touch.min.js',
             libs+'angular-ui-router/release/angular-ui-router.min.js',
+            libs+'rx/dist/rx.all.min.js',
+            libs+'rx-angular/dist/rx.angular.min.js',
             libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
             libs+'angular-material/angular-material.min.js',
             source+'modernizr.js',

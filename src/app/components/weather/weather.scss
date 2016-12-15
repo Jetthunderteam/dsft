@@ -5,7 +5,7 @@ Local Imports
 /*************************
 Weather Component Style
 **************************/
-.dsft-weatherMap{ height: calc(100% - $height-navbar); width: 100%;}
+.dsft-weatherMap{ height: calc(100% - #{$height-navbar}); width: 100%;}
 /*************************
 Media Queries
 **************************/
