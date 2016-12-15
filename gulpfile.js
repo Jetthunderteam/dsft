@@ -18,6 +18,7 @@
         fileSync = require('fs'),
         inject = require('gulp-inject'),
         jade = require('gulp-jade'),
+        karma = require('karma').Server,
         modernizr = require('gulp-modernizr'),
         removeCode = require('gulp-remove-code'),
         rename = require('gulp-rename'),
@@ -43,21 +44,21 @@
         buildDir = './dist',
         projectDir = './',
         reload = browserSync.reload;
-    var YOUR_LOCALS = {};
 
     /*************************
      * Gulp Tasks
      **************************/
     gulp.task('build-project', buildProject);
-    gulp.task('bundle-dependant-js', bundleDependantJS);
-    gulp.task('bundle-dependant-css', bundleDependantCSS);
     gulp.task('bundle-app-css', bundleAppCSS);
     gulp.task('bundle-app-html', bundleAppHTML);
+    gulp.task('bundle-app-images', bundleAppImages);
     gulp.task('bundle-app-js', bundleAppJS);
+    gulp.task('bundle-dependant-css', bundleDependantCSS);
+    gulp.task('bundle-dependant-js', bundleDependantJS);
     gulp.task('bundle-index', bundleIndex);
     gulp.task('clean-project', cleanProject);
-    gulp.task('compile-scss', compileSCSS);
     gulp.task('compile-jade', compileJade);
+    gulp.task('compile-scss', compileSCSS);
     gulp.task('generate-modernizr', generateModernizr);
     gulp.task('launch-dev', launchDev);
     gulp.task('run-unit-tests', runUnitTests);
@@ -84,15 +85,53 @@
     }
 
     /**
-     * Bundles the external JS dependencies into a
-     * single modules file. The following task will:
-     *      - Concatenate dependant JS files
-     *      - Version dependant JS files
+     * Bundles the application CSS into a
+     * single file. The following task will:
+     *      - Concatenate the application CSS files
+     *      - Clean the application CSS files
+     *      - Version the application CSS files
      */
-    function bundleDependantJS() {
-        util.log(util.colors.blue('Bundle dependant JS'));
-        return gulp.src(config.dependantJS)
-            .pipe(concat('external-modules.js'))
+    function bundleAppCSS() {
+        util.log(util.colors.blue('Bundle application JS'));
+        return gulp.src(config.appCSS)
+            .pipe(concat('app.css'))
+            .pipe(tidyCSS())
+            .pipe(version())
+            .pipe(gulp.dest(buildDir));
+    }
+
+    /**
+     * Bundles the application HTML files into their
+     * respective directories.
+     */
+    function bundleAppHTML() {
+        util.log(util.colors.blue('Bundle application HTML'));
+        return gulp.src(config.appHTML)
+            .pipe(gulp.dest(buildDir+'/src/app/components'));
+    }
+
+    /**
+     * Bundles the application images files into their
+     * respective directories.
+     */
+    function bundleAppImages() {
+        util.log(util.colors.blue('Bundle application Images'));
+        return gulp.src(config.appImages)
+            .pipe(gulp.dest(buildDir+'/src/assets/images'))
+    }
+
+    /**
+     * Bundles the application JS into a
+     * single file. The following task will:
+     *      - Concatenate the application JS files
+     *      - Clean the application JS files
+     *      - Version the application JS files
+     */
+    function bundleAppJS() {
+        util.log(util.colors.blue('Bundle application CSS'));
+        return gulp.src(config.appJS)
+            .pipe(concat('app.js'))
+            .pipe(tidyJS())
             .pipe(version())
             .pipe(gulp.dest(buildDir));
     }
@@ -112,43 +151,15 @@
     }
 
     /**
-     * Bundles the application HTML files into their
-     * respective directories.
+     * Bundles the external JS dependencies into a
+     * single modules file. The following task will:
+     *      - Concatenate dependant JS files
+     *      - Version dependant JS files
      */
-    function bundleAppHTML() {
-        util.log(util.colors.blue('Bundle application HTML'));
-        return gulp.src(config.appHTML)
-            .pipe(gulp.dest(buildDir + '/src/app/components'));
-    }
-
-    /**
-     * Bundles the application CSS into a
-     * single file. The following task will:
-     *      - Concatenate the application CSS files
-     *      - Clean the application CSS files
-     *      - Version the application CSS files
-     */
-    function bundleAppCSS() {
-        util.log(util.colors.blue('Bundle application JS'));
-        return gulp.src(config.appCSS)
-            .pipe(concat('app.css'))
-            .pipe(tidyCSS())
-            .pipe(version())
-            .pipe(gulp.dest(buildDir));
-    }
-
-    /**
-     * Bundles the application JS into a
-     * single file. The following task will:
-     *      - Concatenate the application JS files
-     *      - Clean the application JS files
-     *      - Version the application JS files
-     */
-    function bundleAppJS() {
-        util.log(util.colors.blue('Bundle application CSS'));
-        return gulp.src(config.appJS)
-            .pipe(concat('app.js'))
-            .pipe(tidyJS())
+    function bundleDependantJS() {
+        util.log(util.colors.blue('Bundle dependant JS'));
+        return gulp.src(config.dependantJS)
+            .pipe(concat('external-modules.js'))
             .pipe(version())
             .pipe(gulp.dest(buildDir));
     }
@@ -180,18 +191,6 @@
     }
 
     /**
-     * Compiles the SCSS files to their respective
-     * directories. The following task will:
-     *      - Compile the applications SCSS files
-     */
-    function compileSCSS() {
-        util.log(util.colors.blue('Compiling SCSS'));
-        return gulp.src(config.appSCSS, {base: baseDir})
-            .pipe(sass())
-            .pipe(gulp.dest(baseDir));
-    }
-
-    /**
      * Compiles the Jade files to their respective
      * directories. The following task will:
      *      - Compile the applications Jade files
@@ -200,6 +199,18 @@
         util.log(util.colors.blue('Compiling Jade'));
         return gulp.src(config.appJade, {base: baseDir})
             .pipe(jade())
+            .pipe(gulp.dest(baseDir));
+    }
+
+    /**
+     * Compiles the SCSS files to their respective
+     * directories. The following task will:
+     *      - Compile the applications SCSS files
+     */
+    function compileSCSS() {
+        util.log(util.colors.blue('Compiling SCSS'));
+        return gulp.src(config.appSCSS, {base: baseDir})
+            .pipe(sass())
             .pipe(gulp.dest(baseDir));
     }
 
@@ -236,9 +247,15 @@
         gulp.watch(config.appSCSS, ['watch-scss']);
     }
 
-
+    /**
+     * Runs the unit test suite for the application
+     */
     function runUnitTests() {
-
+        util.log(util.colors.blue('Running unit tests'));
+        new karma({
+            configFile: __dirname+'/config/karma.config.js',
+            singleRun: true
+        }).start();
     }
 
     /**

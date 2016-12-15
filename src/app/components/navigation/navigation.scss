@@ -5,10 +5,10 @@ Local Imports
 /*************************
 Navigation Component Style
 **************************/
-.dsft-navigation {background-color: #323A45;}
-.dsft-navigationHeading{}
-.dsft-navigationHeadingInner{@include flexRowStartCenter}
+.dsft-navigation { background-color: $background-dark; }
+.dsft-navigationHeadingContainer{ }
+.dsft-navigationHeading{ color: $white; @include flexRowStartCenter }
 .dsft-navigationMenuList{}
 .dsft-navigationMenuListItem{}
 .dsft-navigationMenuListItemIcon{}
-.dsft-navigationMenuListItemHeading{colour: $white;}
+.dsft-navigationMenuListItemHeading{ color: $white; }

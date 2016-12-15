@@ -21,6 +21,7 @@ html(lang="en" ng-app="dsft")
         link(rel='stylesheet' href='node_modules/angular-material/angular-material.min.css' type='text/css')
         link(rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css' type='text/css')
         link(rel='stylesheet' href='node_modules/animate.css/animate.min.css' type='type/css')
+        link(rel='stylesheet' href='node_modules/leaflet/dist/leaflet.css' type='type/css')
         link(rel='stylesheet' href='src/styles.css' type='text/css')
         <!-- /Stylesheets -->
         <!--endRemoveIf(production)-->
@@ -41,61 +42,68 @@ html(lang="en" ng-app="dsft")
         <!--removeIf(production)-->
         <!-- Frameworks -->
         script(src='node_modules/jquery/dist/jquery.min.js' type='text/javascript')
-        script(src='node_modules/angular/angular.min.js', type='text/javascript')
-        script(src='node_modules/angular-animate/angular-animate.min.js', type='text/javascript')
-        script(src='node_modules/angular-aria/angular-aria.min.js', type='text/javascript')
-        script(src='node_modules/angular-cookies/angular-cookies.min.js', type='text/javascript')
-        script(src='node_modules/angular-resource/angular-resource.min.js', type='text/javascript')
-        script(src='node_modules/angular-sanitize/angular-sanitize.min.js', type='text/javascript')
-        script(src='node_modules/angular-touch/angular-touch.min.js', type='text/javascript')
-        script(src='node_modules/angular-ui-router/release/angular-ui-router.min.js', type='text/javascript')
+        script(src='node_modules/angular/angular.min.js' type='text/javascript')
+        script(src='node_modules/angular-animate/angular-animate.min.js' type='text/javascript')
+        script(src='node_modules/angular-aria/angular-aria.min.js' type='text/javascript')
+        script(src='node_modules/angular-cookies/angular-cookies.min.js' type='text/javascript')
+        script(src='node_modules/angular-resource/angular-resource.min.js' type='text/javascript')
+        script(src='node_modules/angular-sanitize/angular-sanitize.min.js' type='text/javascript')
+        script(src='node_modules/angular-touch/angular-touch.min.js' type='text/javascript')
+        script(src='node_modules/angular-ui-router/release/angular-ui-router.min.js' type='text/javascript')
         <!-- /Frameworks -->
 
         <!-- Front End Frameworks -->
-        script(src='node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js', type='text/javascript')
-        script(src='node_modules/angular-material/angular-material.min.js', type='text/javascript')
-        script(src='src/modernizr.js', type='text/javascript')
+        script(src='node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js' type='text/javascript')
+        script(src='node_modules/angular-material/angular-material.min.js' type='text/javascript')
+        script(src='src/modernizr.js' type='text/javascript')
         <!-- /Front End Frameworks -->
 
         <!-- Libraries -->
-        script(src='node_modules/moment/min/moment.min.js', type='text/javascript')
-        script(src='node_modules/moment-timezone/builds/moment-timezone.min.js', type='text/javascript')
-        script(src='node_modules/angularfire/dist/angularfire.min.js', type='text/javascript')
-        script(src='node_modules/firebase/firebase.js', type='text/javascript')
-        script(src='node_modules/angulartics/dist/angulartics.min.js', type='text/javascript')
-        script(src='node_modules/angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js', type='text/javascript')
+        script(src='node_modules/moment/min/moment.min.js' type='text/javascript')
+        script(src='node_modules/moment-timezone/builds/moment-timezone.min.js' type='text/javascript')
+        script(src='node_modules/leaflet/dist/leaflet.js' type='text/javascript')
+        script(src='node_modules/angular-simple-logger/dist/angular-simple-logger.min.js' type='text/javascript')
+        script(src='node_modules/ui-leaflet/dist/ui-leaflet.min.js' type='text/javascript')
+        script(src='node_modules/angularfire/dist/angularfire.min.js' type='text/javascript')
+        script(src='node_modules/firebase/firebase.js' type='text/javascript')
+        script(src='node_modules/angulartics/dist/angulartics.min.js' type='text/javascript')
+        script(src='node_modules/angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js' type='text/javascript')
         <!-- /Libraries -->
 
         <!-- App Component -->
-        script(src='src/app/app.module.js', type='text/javascript')
-        script(src='src/app/app.config.js', type='text/javascript')
-        script(src='src/app/app.run.js', type='text/javascript')
+        script(src='src/app/app.module.js' type='text/javascript')
+        script(src='src/app/app.config.js' type='text/javascript')
+        script(src='src/app/app.run.js' type='text/javascript')
         <!-- /App Component -->
 
         <!-- Home Component -->
-        script(src='src/app/components/home/home.controller.js', type='text/javascript')
+        script(src='src/app/components/home/home.controller.js' type='text/javascript')
         <!-- /Home Component -->
 
         <!-- Training Component -->
-        script(src='src/app/components/training/training.controller.js', type='text/javascript')
+        script(src='src/app/components/training/training.controller.js' type='text/javascript')
         <!-- /Training Component -->
 
         <!-- Experience Component -->
-        script(src='src/app/components/experience/experience.controller.js', type='text/javascript')
+        script(src='src/app/components/experience/experience.controller.js' type='text/javascript')
         <!-- /Experience Component -->
 
         <!-- Fleet Component -->
-        script(src='src/app/components/fleet/fleet.controller.js', type='text/javascript')
+        script(src='src/app/components/fleet/fleet.controller.js' type='text/javascript')
         <!-- /Fleet Component -->
 
+        <!-- Weather Component -->
+        script(src='src/app/components/weather/weather.controller.js' type='text/javascript')
+        <!-- /Weather Component -->
+
         <!-- Navbar Component -->
-        script(src='src/app/components/navbar/navbar.controller.js', type='text/javascript')
-        script(src='src/app/components/navbar/navbar.directive.js', type='text/javascript')
+        script(src='src/app/components/navbar/navbar.controller.js' type='text/javascript')
+        script(src='src/app/components/navbar/navbar.directive.js' type='text/javascript')
         <!-- /Navbar Component -->
 
         <!-- Navigation Component -->
-        script(src='src/app/components/navigation/navigation.controller.js', type='text/javascript')
-        script(src='src/app/components/navigation/navigation.directive.js', type='text/javascript')
+        script(src='src/app/components/navigation/navigation.controller.js' type='text/javascript')
+        script(src='src/app/components/navigation/navigation.directive.js' type='text/javascript')
         <!-- /Navigation Component -->
 
         <!-- Footer Component -->
@@ -103,11 +111,10 @@ html(lang="en" ng-app="dsft")
         script(src='src/app/components/footer/footer.directive.js' type='text/javascript')
         <!-- /Footer Component -->
 
-        <!-- Footer Component -->
+        <!-- Utils -->
         script(src='src/app/components/utils/urls.factory.js' type='text/javascript')
         script(src='src/app/components/utils/utils.factory.js' type='text/javascript')
-        <!-- /Footer Component -->
-
+        <!-- /Utils -->
 
         <!-- Firebase Config -->
 

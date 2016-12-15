@@ -3,11 +3,9 @@ Local Imports
 **************************/
 @import "../core/core.variables.scss";
 /*************************
-Navbar Component Style
+Weather Component Style
 **************************/
-.dsft-navbar { background-color: $background-dark; height:100px; }
-.dsft-navbarInner { height: 100%; margin: 0 auto; @include flexRowBetweenCenter; }
-.dsft-navbarMenuIcon { color: $white; }
+.dsft-weatherMap{ height: calc(100% - $height-navbar); width: 100%;}
 /*************************
 Media Queries
 **************************/
@@ -15,9 +13,7 @@ Media Queries
 @media (max-width: 33.9em) {}
 
 // Small devices (landscape phones, less than 48em)
-@media (max-width: 47.9em) {
-  .dsft-navbar { height: $height-navbar-mobile; }
-}
+@media (max-width: 47.9em) {}
 
 // Medium devices (tablets, less than 62em)
 @media (max-width: 61.9em) {}

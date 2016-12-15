@@ -13,25 +13,27 @@ Core Colors
 **************************/
 $white: #fff;
 $black: #000;
-$primary-background: #fff;
-$primary-background-dark: #343434;
-$secondary-background:#f4f4f4;
-$secondary-background-dark: #111;
-$primary-color: #555964;
-$secondary-color: blue;
-$highlight-color: #1776a0;
-$transparent-background: transparent;
+$background-transparent: transparent;
+$background-dark: #22313F; // Clay Blue
+$background-super-dark: #23282F; // Deep Grey
+$background-light: #EEEEEE; // Smoke Grey
+$colour-primary: #045A67; // Lush Blue
+$accent-glow: #20AFCD; // Radiation Blue
+$accent-eco: #1ABC9C; // Lush Green
+$accent-charm: #DB0A5B; // Vibrant Pink
+$accent-nuclear: #F9690E; // Explosive Orange
+$accent-berry: #8E44AD; // Royal Purple
+$accent-freeze: #95A5A6; // Winter Grey
+/*************************
+Core Styles
+**************************/
+$padding-none: 0;
+$margin-none: 0;
 /*************************
 Core Components
 **************************/
-$no-padding: 0;
-$no-margin:0;
-/*************************
-Core Borders
-**************************/
-/*************************
-Core Alerts
-**************************/
+$height-navbar: 100px;
+$height-navbar-mobile: 48px;
 /*************************
 Core Flexbox
 **************************/

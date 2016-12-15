@@ -10,12 +10,14 @@
         'ngSanitize',
         'ui.bootstrap',
         'ui.router',
+        'ui-leaflet',
         'angulartics',
         'angulartics.google.tagmanager',
         'dsft.home',
         'dsft.training',
         'dsft.experience',
         'dsft.fleet',
+        'dsft.weather',
         'dsft.navbar',
         'dsft.navigation',
         'dsft.footer',
@@ -28,6 +30,7 @@
     angular.module('dsft.training', []);
     angular.module('dsft.experience', []);
     angular.module('dsft.fleet', []);
+    angular.module('dsft.weather', []);
 
     //Components
     angular.module('dsft.navbar', []);

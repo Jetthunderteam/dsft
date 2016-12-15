@@ -40,6 +40,12 @@
                 templateUrl: 'src/app/components/fleet/fleet.html',
                 controller: "FleetCtrl",
                 controllerAs: "FleetCtrl"
+            })
+            .state('weather', {
+                url: '/weather',
+                templateUrl: 'src/app/components/weather/weather.html',
+                controller: "WeatherCtrl",
+                controllerAs: "WeatherCtrl"
             });
     }
 })();

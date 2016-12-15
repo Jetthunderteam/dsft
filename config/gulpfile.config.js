@@ -5,9 +5,46 @@ module.exports = function() {
     var libs = 'node_modules/',
         source = 'src/',
         app = source+'app/',
+        assets = source+'assets/',
         components = app+'components/';
 
     var config = {
+        appCSS: [
+            source+'styles.css'
+        ],
+        appHTML: [
+            components+'**/*.html'
+        ],
+        appImages: [
+            assets+'images/*.{gif,jpg,png,svg,ico}',
+            assets+'images/**/*.{gif,jpg,png,svg,ico}'
+        ],
+        appIndex: [
+            'index.html'
+        ],
+        appJade: [
+            '*.jade',
+            source+'*.jade',
+            app+'*.jade',
+            source+'app/components/**/*.jade'
+        ],
+        appJS: [
+            app+'app.module.js',
+            app+'app.config.js',
+            app+'app.run.js',
+            components+'**/*.js'
+        ],
+        appSCSS: [
+            source+'*.scss',
+            app+'*.scss',
+            source+'app/components/**/*.scss'
+        ],
+        dependentCSS: [
+            libs+'angular-material/angular-material.min.css',
+            libs+'bootstrap/dist/css/bootstrap.min.css',
+            libs+'animate.css/animate.min.css',
+            libs+'leaflet/dist/leaflet.css'
+        ],
         dependantJS: [
             libs+'jquery/dist/jquery.min.js',
             libs+'angular/angular.min.js',
@@ -23,43 +60,13 @@ module.exports = function() {
             source+'modernizr.js',
             libs+'moment/min/moment.min.js',
             libs+'moment-timezone/builds/moment-timezone.min.js',
+            libs+'leaflet/dist/leaflet.js',
+            libs+'angular-simple-logger/dist/angular-simple-logger.min.js',
+            libs+'ui-leaflet/dist/ui-leaflet.min.js',
             libs+'angularfire/dist/angularfire.min.js',
             libs+'firebase/firebase.js',
             libs+'angulartics/dist/angulartics.min.js',
             libs+'angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js'
-        ],
-        dependentCSS: [
-            libs+'angular-material/angular-material.min.css',
-            libs+'bootstrap/dist/css/bootstrap.min.css',
-            libs+'animate.css/animate.min.css'
-        ],
-        appCSS: [
-            source+'styles.css'
-        ],
-        appJS: [
-            app+'app.module.js',
-            app+'app.config.js',
-            app+'app.run.js',
-            components+'**/*.js'
-        ],
-        appHTML: [
-            components+'**/*.html'
-        ],
-        appIndex: [
-            'index.html'
-        ],
-        appSCSS: [
-            source+'*.scss',
-            app+'*.scss',
-            source+'app/components/**/*.scss'
-        ],
-        appJade: [
-            '*.jade',
-            source+'*.jade',
-            app+'*.jade',
-            source+'app/components/**/*.jade'
-        ],
-        appImages: [
         ]
     };
     return config;
