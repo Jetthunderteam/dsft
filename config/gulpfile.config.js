@@ -6,11 +6,15 @@ module.exports = function() {
         source = 'src/',
         app = source+'app/',
         assets = source+'assets/',
-        components = app+'components/';
+        components = app+'components/',
+        data = source+'data/';
 
     var config = {
         appCSS: [
             source+'styles.css'
+        ],
+        appData: [
+            data+'*.json'
         ],
         appHTML: [
             components+'**/*.html'

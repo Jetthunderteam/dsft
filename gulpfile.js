@@ -50,6 +50,7 @@
      **************************/
     gulp.task('build-project', buildProject);
     gulp.task('bundle-app-css', bundleAppCSS);
+    gulp.task('bundle-app-data', bundleAppData);
     gulp.task('bundle-app-html', bundleAppHTML);
     gulp.task('bundle-app-images', bundleAppImages);
     gulp.task('bundle-app-js', bundleAppJS);
@@ -79,7 +80,7 @@
             'generate-modernizr',
             'clean-project',
             ['compile-scss', 'compile-jade'],
-            ['bundle-dependant-js', 'bundle-dependant-css', 'bundle-app-css', 'bundle-app-js'],
+            ['bundle-dependant-js', 'bundle-dependant-css', 'bundle-app-css', 'bundle-app-js', 'bundle-app-data'],
             'bundle-app-html',
             'bundle-index', callback);
     }
@@ -98,6 +99,16 @@
             .pipe(tidyCSS())
             .pipe(version())
             .pipe(gulp.dest(buildDir));
+    }
+
+    /**
+     * Bundles the application data files into
+     * their respective directories.
+     */
+    function bundleAppData() {
+        util.log(util.colors.blue('Bundle application Data'));
+        return gulp.src(config.appData)
+            .pipe(gulp.dest(buildDir+'/src/data'));
     }
 
     /**

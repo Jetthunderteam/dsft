@@ -8,77 +8,92 @@
         .module('dsft.weather')
         .controller('WeatherCtrl', WeatherCtrl);
 
-    WeatherCtrl.$inject = ['$rootScope', '$scope', '$mdDialog', 'weatherFactory', 'weatherConstants'];
-    function WeatherCtrl($rootScope, $scope, $mdDialog, weatherFactory, weatherConstants) {
+    WeatherCtrl.$inject = ['$rootScope', '$scope', '$log', '$mdDialog', 'weatherFactory', 'weatherConstants'];
+    function WeatherCtrl($rootScope, $scope, $log, $mdDialog, weatherFactory, weatherConstants) {
         var vm = this;
+
         /** Activate */
         vm.$onInit = activate;
 
         /** View Bindings */
-        vm.airfields = '';
+        vm.airfields = {};
+        vm.forecast = {};
         vm.mapBounds = weatherConstants.MAP_BOUNDS;
         vm.mapCentre = weatherConstants.MAP_CENTRE;
         vm.mapControls = weatherConstants.MAP_CONTROLS;
         vm.mapDefault = weatherConstants.MAP_DEFAULTS;
 
         /** Bindings */
+        vm.closeAirfieldDetails = closeAirfieldDetails;
         vm.getAirfields = getAirfields;
+        vm.getThreeHourlyForecast = getThreeHourlyForecast;
         vm.openAirfieldDetails = openAirfieldDetails;
         vm.selectAirfield = selectAirfield;
         vm.setMapFocus = setMapFocus;
 
         /** Event Listeners */
         $scope.$on('leafletDirectiveMarker.dsftWeatherMap.click', selectAirfield);
-        $scope.$on(weatherConstants.EVENT_MARKER_CLICK, function(event) {
-            console.log(event);
+        $scope.$on(weatherConstants.EVENT_MARKER_CLICK, function(event, args) {
+            getThreeHourlyForecast(args.model.sspaid);
+            openAirfieldDetails(event);
         });
 
         /**
          * Activates the weather controller and makes calls
          * to the following methods:
-         *      - getAirfields: Gets the list of all UK airfields
+         *      - getAirfields: Gets the list of all European airfields
          */
         function activate() {
             getAirfields();
         }
 
-        /**
-         * Makes a request to obtain the current list of UK
-         * airfields
-         */
+        function closeAirfieldDetails() {
+            $mdDialog.cancel();
+        }
+
         function getAirfields() {
             var upstreamUrl = weatherConstants.UK_AIRFIELDS_URL;
-            weatherFactory.getUpstreamData(upstreamUrl).subscribe(getAirfieldsSuccess, getAirfieldsError);
+            weatherFactory.getUpstreamAirfieldsData(upstreamUrl).subscribe(getAirfieldsSuccess, getAirfieldsError);
 
             function getAirfieldsSuccess(response) {
                 vm.airfields = response.data;
             }
 
             function getAirfieldsError(error) {
-                console.log(error);
+                $log.error(error);
             }
         }
 
-        function openAirfieldDetails() {
+        function getThreeHourlyForecast(siteId) {
+            var upstreamUrl = weatherConstants.THREE_HOURLY_FORECAST_URL;
+            weatherFactory.getUpstreamThreeHourlyForecastData(upstreamUrl, siteId).subscribe(getThreeHourlyForecastSuccess, getThreeHourlyForecastError);
 
+            function getThreeHourlyForecastSuccess(response) {
+                vm.forecast = response.data;
+            }
+
+            function getThreeHourlyForecastError(error) {
+                $log.error(error);
+            }
         }
 
-        /**
-         * @param {object} event
-         * @param {object} args
-         */
+        function openAirfieldDetails(event) {
+            $mdDialog.show({
+                controller: 'WeatherCtrl',
+                controllerAs: 'WeatherCtrl',
+                templateUrl: 'src/app/components/dialogs/airfield-details.html',
+                targetEvent: event,
+                clickOutsideToClose:true
+            });
+        }
+
         function selectAirfield(event, args) {
             setMapFocus(args);
-            $rootScope.$broadcast(weatherConstants.EVENT_MARKER_CLICK)
+            $rootScope.$broadcast(weatherConstants.EVENT_MARKER_CLICK, args);
         }
 
-        /**
-         * Sets the focus of the map to the desired
-         * latitude, longitude and zoom level with the provided
-         * item
-         * @param {object} selectedItem
-         */
         function setMapFocus(selectedItem) {
+            //console.log(selectedItem, typeof(selectedItem));
             vm.mapCentre = {
                 lat: selectedItem.model.lat,
                 lng: selectedItem.model.lng,

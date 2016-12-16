@@ -6,9 +6,11 @@
     angular
         .module('dsft.weather')
         .constant('weatherConstants', {
+            /** Data Point Constants */
             DATA_POINT_API_KEY: '499db739-da03-49a8-9991-740e6e633e76',
-            DATA_POINT_URL: 'http://datapoint.metoffice.gov.uk/public/data/',
+            /** Event Constants */
             EVENT_MARKER_CLICK: 'markerClickEvent',
+            /** Map Constants */
             MAP_BOUNDS: {
                 northEast: {
                     lat: 85,
@@ -31,6 +33,8 @@
                 maxZoom: 15,
                 minZoom: 2
             },
+            /** URL Constants */
+            THREE_HOURLY_FORECAST_URL: 'http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/{siteId}?res=3hourly&key={apiKey}',
             UK_AIRFIELDS_URL: 'src/data/uk-airfields.json'
         });
 })();

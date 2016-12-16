@@ -3,9 +3,10 @@ Local Imports
 **************************/
 @import "../core/core.variables.scss";
 /*************************
-Weather Component Style
+Airfield Details Dialog
 **************************/
-.dsft-weatherMap{ height: calc(100% - #{$height-navbar}); width: 100%; z-index: 0;}
+.dsft-airfieldDetailsDialog{ background: $white; border-radius: 4px; height:auto; width: 500px; }
+.dsft-airfieldDetailsDialogContent { padding: 20px; }
 /*************************
 Media Queries
 **************************/
