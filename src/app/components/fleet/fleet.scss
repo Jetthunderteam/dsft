@@ -1,4 +1,10 @@
 /*************************
+Local Imports
+**************************/
+@import "../core/core.variables.scss";
+/*************************
 Fleet Component Style
 **************************/
 .dsft-fleet {}
+
+.dsft-fleetResourcesInfoBlock{ border-left-width: 2px; border-left-style: solid; border-left-color: $accent-nuclear; overflow: hidden;  padding: 20px;  position: relative; }

@@ -1,4 +1,25 @@
 /*************************
+Local Imports
+**************************/
+@import "../core/core.variables.scss";
+/*************************
 Home Component Style
 **************************/
 .dsft-home {}
+/*************************
+Home Slider Style
+**************************/
+/*************************
+Home Controls
+**************************/
+@mixin dsft-homeControlButton {background: $background-super-dark; height:50px; width: 50px;}
+.dsft-homeControlContainer { background: $background-dark; height: 50px; width: 100%; @include flexRowBetweenCenter;}
+.dsft-homeControlPrev{@include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlNext {@include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlScroll {@include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlIcon {color: $white;}
+.dsft-homeControlSelector{list-style-type: none;  margin: 0;  padding: 0;}
+.dsft-homeControlSelectorItem {float: left; height: 12px; width: 12px;}
+.dsft-homeControlSelectorDot { background-color: $white; border-radius: 100%; display: block; height: 12px; width: 12px; }
+
+.dsft-homeAboutInfoBlock{ border-left-width: 2px; border-left-style: solid; border-left-color: $accent-charm; overflow: hidden;  padding: 20px;  position: relative; }

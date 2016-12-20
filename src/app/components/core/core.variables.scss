@@ -37,5 +37,6 @@ $height-navbar-mobile: 48px;
 /*************************
 Core Flexbox
 **************************/
+@mixin flexRowCenterCenter {display: flex; flex-direction: row; justify-content: center; align-items: center;}
 @mixin flexRowStartCenter {display: flex; flex-direction: row; justify-content: flex-start; align-items: center;}
 @mixin flexRowBetweenCenter {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}

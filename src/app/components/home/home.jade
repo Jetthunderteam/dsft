@@ -1,7 +1,69 @@
 <!-- Home Component -->
-div.container-fluid
-    div.row
-        h1 Home!
+// Gallery Section
+.gallery.items-3.autoplay
+    #item-1.control-operator
+    #item-2.control-operator
+    #item-3.control-operator
+    figure.item
+        h1 1
+    figure.item
+        h1 2
+    figure.item
+        h1 3
+// Gallery Section End
+
+// Controls Section
+div.dsft-homeControlContainer
+    a.dsft-homeControlPrev
+        md-icon.dsft-homeControlIcon keyboard_arrow_left
+    a.dsft-homeControlNext
+        md-icon.dsft-homeControlIcon keyboard_arrow_right
+    ul.dsft-homeControlSelector
+        li.dsft-homeControlSelectorItem
+            a.dsft-homeControlSelectorDot(href='#item-1', target='_self')
+        li.dsft-homeControlSelectorItem
+            a.dsft-homeControlSelectorDot(href='#item-2', target='_self')
+        li.dsft-homeControlSelectorItem
+            a.dsft-homeControlSelectorDot(href='#item-3', target='_self')
+    a.dsft-homeControlScroll
+        md-icon.dsft-homeControlIcon keyboard_arrow_down
+// Controls Section End
+
+// About Section
+section.section-padding#about-section
+    div.container
+        div.row.text-xs-center
+            h1 Devon & Somerset Flight Training
+            h3 Learn to fly with the best flying school in the South West
+        div.row
+            h3 About us
+            div.dsft-homeAboutInfoBlock
+                h3 Welcome to - Our flying school
+                p If you have always dreamt of flying, either as an aviation enthusiast or an aspiring commercial pilot, then our training courses can help you get your passion airborne and put you within reach of the skies. Our flight school is united by our enthusiasm and passion for flying, allowing us to provide a high quality, but still affordable training programme to all our students.
+                p We are surrounded by some of the most beautiful scenery in the UK, offering a unique, busy and efficient GA friendly airfield open to all manner of fixed wing and rotary aircraft. We provide a fast and convenient departure service allowing you to complete your training on time and on budget.
+                p Whether you are looking to gain a Pilot’s Licence, develop your flying skills or simply enjoy one of our flight experiences, we have plenty to offer at our friendly and professional flying school.
+                p Our quality team of dedicated instructors and operations staff can help you step by step over the course of your training in all aspects of flying and theoretical knowledge. Their combined background experience in many different fields of aviation is a true asset and will help you quickly gain the confidence and expertise that is needed in the aviation environment.
+                p We operate a safe and reliable fleet of aircraft, maintained by our professional and CAA certified engineers. Our Five Cessna 152's, Three Cessna 172's, a PA-28, a Citabria Tailwheel, and Scheibe Motor Glider provide, what we believe to be, the perfect balance between pleasurable and professional flying.
+                p We pride ourselves in providing the highest quality of training, so why not give us a call and decide for yourself by arranging your very first flight.
+// About Section End
+
+div.parallax
+    img(src='http://placehold.it/2000x400')
+
+// Location Section
+section.section-padding#location-section
+    div.container
+        div.row.text-xs-center
+            h1 Location
+            h3 Some of the most stunning views anywhere in the UK
+        div.row
+            div.col-md-6.col-sm-12.col-xs-12
+                h3 Where are we?
+                p Dunkeswell Aerodrome is situated in the heart of the Blackdown Hills, approximately 6 miles North of Honiton. Once a small quiet parish village, Dunkeswell is now a busy and vibrant Aero hub for one of the largest General Aviation communities in South West England. Initially established as an American Naval base during the peak of WW2; it now supports a network of aviation businesses and commercial developments.
+            div.col-md-6.col-sm-12.col-xs-12
+                h3 Our location
+                p Our location upon the beautiful Blackdown Hills provides us with, what we believe to be, some of the most stunning views anywhere in the UK. Quaint secluded villages, beautiful rolling countryside and rugged coastal views are a sight not worth missing. We are situated at an outstanding 839 feet above Sea Level, making us the highest licenced airfield in the United Kingdom.
+// Location Section End
 footer-directive
 <!-- /Home Component -->
 
