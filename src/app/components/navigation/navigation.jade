@@ -2,15 +2,28 @@
 md-sidenav.dsft-navigation(md-component-id='left')
     md-toolbar.dsft-navigationHeadingContainer
         h1.dsft-navigationHeading Menu
-    md-list
-        md-list-item(ui-sref='home' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#20AFCD' role='link' aria-label='Go to home view')
+        span.flex
+        md-button.md-icon-button(ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#20AFCD' aria-label='Close menu')
+            md-icon.dsft-navbarMenuIcon clear
+    md-list.dsft-navigationMenuList
+        md-list-item.dsft-navigationMenuListItem(ui-sref='home' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#20AFCD' role='link' aria-label='Go to home view')
+            md-button.md-icon-button
+                md-icon.dsft-navbarMenuIcon home
             h3.dsft-navigationMenuListItemHeading Home
-        md-list-item(ui-sref='training' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#1ABC9C' role='link' aria-label='Go to training view')
+        md-list-item.dsft-navigationMenuListItem(ui-sref='training' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#1ABC9C' role='link' aria-label='Go to training view')
+            md-button.md-icon-button
+                md-icon.dsft-navbarMenuIcon school
             h3.dsft-navigationMenuListItemHeading Training
-        md-list-item(ui-sref='experience' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#DB0A5B' role='link' aria-label='Go to experience view')
+        md-list-item.dsft-navigationMenuListItem(ui-sref='experience' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#DB0A5B' role='link' aria-label='Go to experience view')
+            md-button.md-icon-button
+                md-icon.dsft-navbarMenuIcon flight_takeoff
             h3.dsft-navigationMenuListItemHeading Experience
-        md-list-item(ui-sref='fleet' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#F9690E' role='link' aria-label='Go to fleet view')
+        md-list-item.dsft-navigationMenuListItem(ui-sref='fleet' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#F9690E' role='link' aria-label='Go to fleet view')
+            md-button.md-icon-button
+                md-icon.dsft-navbarMenuIcon airplanemode_active
             h3.dsft-navigationMenuListItemHeading Fleet
-        md-list-item(ui-sref='weather' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#8E44AD' role='link' aria-label='Go to weather view')
+        md-list-item.dsft-navigationMenuListItem(ui-sref='weather' ng-click='NavigationCtrl.closeSideNav("left")' md-ink-ripple='#8E44AD' role='link' aria-label='Go to weather view')
+            md-button.md-icon-button
+                md-icon.dsft-navbarMenuIcon cloud
             h3.dsft-navigationMenuListItemHeading Weather
 // Navigation Component

@@ -5,10 +5,27 @@ Local Imports
 /*************************
 Navigation Component Style
 **************************/
-.dsft-navigation { background-color: $background-dark; }
-.dsft-navigationHeadingContainer{ }
-.dsft-navigationHeading{ color: $white; @include flexRowStartCenter }
-.dsft-navigationMenuList{}
-.dsft-navigationMenuListItem{}
+.dsft-navigation { background-color: $background-dark; max-width: 300px; width: 300px; }
+.dsft-navigationHeadingContainer{ border-bottom: 1px solid $accent-freeze; padding: 30px 16px; @include flexRowStartCenter;}
+.dsft-navigationHeading{ color: $white; font-weight: 300; }
+.dsft-navigationMenuList{ margin: 0; padding: 0;}
+.dsft-navigationMenuListItem{ border-bottom: 1px solid $accent-freeze;}
 .dsft-navigationMenuListItemIcon{}
-.dsft-navigationMenuListItemHeading{ color: $white; }
+.dsft-navigationMenuListItemHeading{ color: $white; font-weight: 300; }
+/*************************
+Media Queries
+**************************/
+// Extra small devices (portrait phones, less than 34em)
+@media (max-width: 33.9em) {}
+
+// Small devices (landscape phones, less than 48em)
+@media (max-width: 47.9em) {
+   .dsft-navigationHeadingContainer {padding: 8px 16px;}
+}
+
+// Medium devices (tablets, less than 62em)
+@media (max-width: 61.9em) {}
+
+// Large devices (desktops, less than 75em)
+@media (max-width: 74.9em) {}
+

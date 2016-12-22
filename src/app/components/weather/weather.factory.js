@@ -20,9 +20,16 @@
 
         /** Variables */
         var reportTable = '<table class="dsft-weatherMap">' +
-            '<tr><th>Wind Direction</th> <th>Wind Speed (Kt)</th> <th>Gust Speed (Kt)</th> <th>Temp (°)</th> <th>Weather Type</th></tr>' +
-            '<tr><td>{{windDir}}</td> <td>{{windSpeed}}</td> <td>{{windGust}}</td> <td>{{temp}}</td> <td>{{weatherType}}</td></tr>' +
-            '</table>';
+            '<tr><th colspan="2">{{siteProps}}</th></tr>' +
+            '<tr><td>Wind Direction</td> <td>{{windDir}}</td></tr>' +
+            '<tr><td>Wind Speed (Kt)</td> <td>{{windSpeed}}</td></tr>' +
+            '<tr><td>Gust Speed (Kt)</td> <td>{{windGust}}</td></tr>' +
+            '<tr><td>Temp (°)</td> <td>{{temp}}</td></tr>' +
+            '<tr><td>Weather Type</td> <td>{{weatherType}}</td></tr>' +
+            '</table>',
+            reportTableError = '<table class="dsft-weatherMap">' +
+                '<tr><th colspan="2">{{siteProps}}</th></tr>' +
+                '</table>';
 
         /**
          * Gets upstream locations data for all European airfields
@@ -63,12 +70,13 @@
          */
         function setAirfieldDetails(siteObject, forecastObject) {
             var currentPeriod,
-                siteMessage = 'The '+forecastObject.SiteRep.DV.dataDate+' data for '+siteObject.siteName+' is currently unavaibale',
+                siteMessage = reportTableError.replace('{{siteProps}}', 'Data unavailable for '+siteObject.siteName),
                 siteRep = forecastObject.SiteRep.DV;
             if (siteRep.hasOwnProperty('Location')) {
                 currentPeriod = siteRep.Location.Period[0].Rep[0];
                 if (angular.isObject(currentPeriod) && !angular.isUndefined(currentPeriod)) {
                     siteMessage = reportTable
+                        .replace('{{siteProps}}', siteObject.siteName)
                         .replace('{{windDir}}', currentPeriod.D)
                         .replace('{{windSpeed}}', utilsFactory.convertMphToKnot(currentPeriod.S))
                         .replace('{{windGust}}', utilsFactory.convertMphToKnot(currentPeriod.G))
@@ -94,7 +102,7 @@
             sitesArray.forEach(function (siteObject) {
                 siteObject["icon"] = weatherConstants.MAP_AIRFIELD_ICON;
                 siteObject["popupOptions"] = weatherConstants.MAP_AIRFIELD_POPUP_OPTIONS;
-                siteObject["message"] = 'Loading data for ' + siteObject.siteName;
+                siteObject["message"] = reportTableError.replace('{{siteProps}}', 'Loading data for '+siteObject.siteName);
             });
             return sitesArray;
         }

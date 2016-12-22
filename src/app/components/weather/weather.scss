@@ -10,15 +10,14 @@ Weather Component Style
 Weather Map Overrides
 **************************/
 .dsft-weatherMapAirfieldPopup .leaflet-popup-tip,
-.dsft-weatherMapAirfieldPopup .leaflet-popup-content-wrapper {  background: rgba(34, 49, 63, 0.7);  color: $white;  width: 100%; }
-.dsft-weatherMapAirfieldPopup .leaflet-popup-content {  background: $white;  color: $background-dark; }
+.dsft-weatherMapAirfieldPopup .leaflet-popup-content-wrapper {  background: rgba(34, 49, 63, 0.7); border: 0; border-radius: 0; color: $white; padding: 0;  width: 100%; }
+.dsft-weatherMapAirfieldPopup .leaflet-popup-content {  background: $background-transparent;  color: $white; margin: 0; padding: 0; }
 /*************************
 Weather Map Popup
 **************************/
 .dsft-weatherMap table { border-collapse: collapse; width: 100%;  }
 .dsft-weatherMap th, .dsft-weatherMap td { padding: 8px; text-align: left; }
-.dsft-weatherMap tr:nth-child(even){background-color: #f2f2f2}
-.dsft-weatherMap th {  background-color: #4CAF50;  color: white;  }
+.dsft-weatherMap th {  background-color: $accent-glow;  color: $white;  }
 /*************************
 Media Queries
 **************************/

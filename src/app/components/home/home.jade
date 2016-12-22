@@ -3,7 +3,7 @@
 div.gallery.items-3.autoplay
     div.control-operator(id='item-{{$index}}', ng-repeat='slide in HomeCtrl.slides track by $index')
     figure.item(ng-style="{'background-image':'url({{slide.imageUrl}})'}" ng-repeat='slide in HomeCtrl.slides track by $index')
-        h1 1
+        h1
 // Gallery Section End
 
 // Controls Section
@@ -12,9 +12,11 @@ div.dsft-homeControlContainer
         md-icon.dsft-homeControlIcon keyboard_arrow_left
     a.dsft-homeControlNext
         md-icon.dsft-homeControlIcon keyboard_arrow_right
+    span.flex
     ul.dsft-homeControlSelector
         li.dsft-homeControlSelectorItem(ng-repeat='slide in HomeCtrl.slides track by $index')
             a.dsft-homeControlSelectorDot(href='#item-{{$index}}', target='_self')
+    span.flex
     a.dsft-homeControlScroll
         md-icon.dsft-homeControlIcon keyboard_arrow_down
 // Controls Section End
