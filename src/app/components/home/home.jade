@@ -1,15 +1,9 @@
 <!-- Home Component -->
 // Gallery Section
-.gallery.items-3.autoplay
-    #item-1.control-operator
-    #item-2.control-operator
-    #item-3.control-operator
-    figure.item
+div.gallery.items-3.autoplay
+    div.control-operator(id='item-{{$index}}', ng-repeat='slide in HomeCtrl.slides track by $index')
+    figure.item(ng-style="{'background-image':'url({{slide.imageUrl}})'}" ng-repeat='slide in HomeCtrl.slides track by $index')
         h1 1
-    figure.item
-        h1 2
-    figure.item
-        h1 3
 // Gallery Section End
 
 // Controls Section
@@ -19,12 +13,8 @@ div.dsft-homeControlContainer
     a.dsft-homeControlNext
         md-icon.dsft-homeControlIcon keyboard_arrow_right
     ul.dsft-homeControlSelector
-        li.dsft-homeControlSelectorItem
-            a.dsft-homeControlSelectorDot(href='#item-1', target='_self')
-        li.dsft-homeControlSelectorItem
-            a.dsft-homeControlSelectorDot(href='#item-2', target='_self')
-        li.dsft-homeControlSelectorItem
-            a.dsft-homeControlSelectorDot(href='#item-3', target='_self')
+        li.dsft-homeControlSelectorItem(ng-repeat='slide in HomeCtrl.slides track by $index')
+            a.dsft-homeControlSelectorDot(href='#item-{{$index}}', target='_self')
     a.dsft-homeControlScroll
         md-icon.dsft-homeControlIcon keyboard_arrow_down
 // Controls Section End
@@ -48,7 +38,7 @@ section.section-padding#about-section
 // About Section End
 
 div.parallax
-    img(src='http://placehold.it/2000x400')
+    img(src='')
 
 // Location Section
 section.section-padding#location-section
@@ -64,6 +54,46 @@ section.section-padding#location-section
                 h3 Our location
                 p Our location upon the beautiful Blackdown Hills provides us with, what we believe to be, some of the most stunning views anywhere in the UK. Quaint secluded villages, beautiful rolling countryside and rugged coastal views are a sight not worth missing. We are situated at an outstanding 839 feet above Sea Level, making us the highest licenced airfield in the United Kingdom.
 // Location Section End
+
+// Visit Section
+section.section-padding#visit-section
+    div.container
+        div.row.text-xs-center
+            h1 Visit us
+            h3 Fly in and see what we have to offer
+        div.row
+            md-content
+                md-tabs(md-dynamic-height='', md-border-bottom='')
+                    md-tab(label='Airfield Information')
+                        md-content.md-padding
+                            h1.md-display-2 Airfield Information
+                            p
+                    md-tab(label='Food & Drink')
+                        md-content.md-padding
+                            h1.md-display-2 Food & Drink
+                            p
+                    md-tab(label='Prices')
+                        md-content.md-padding
+                            h1.md-display-2 Prices
+                            p
+                    md-tab(label='Accommodation')
+                        md-content.md-padding
+                            h1.md-display-2 Accommodation
+                            p
+                    md-tab(label='Hangarage')
+                        md-content.md-padding
+                            h1.md-display-2 Hangarage
+                            p
+                    md-tab(label='Engineering')
+                        md-content.md-padding
+                            h1.md-display-2 Engineering
+                            p
+// Visit Section End
+
+// Map Section
+
+// Map Section End
+
 footer-directive
 <!-- /Home Component -->
 

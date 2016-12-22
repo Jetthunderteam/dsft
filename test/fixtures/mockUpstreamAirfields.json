@@ -1,0 +1,16 @@
+[
+    {
+        "icao": "EGPN",
+        "lat": 56.4525,
+        "lng": -3.0258,
+        "siteName": "Dundee Airport",
+        "sspaid": 17
+    },
+    {
+        "icao": "EGPO",
+        "lat": 58.214,
+        "lng": -6.325,
+        "siteName": "Stornoway",
+        "sspaid": 3026
+    }
+]

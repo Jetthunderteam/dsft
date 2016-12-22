@@ -10,10 +10,24 @@
     utilsFactory.$inject = [];
     function utilsFactory() {
         return {
+            convertMphToKnot: convertMphToKnot,
             getMoment: getMoment,
             getTime: getTime,
             getYear: getYear
         };
+
+        /**
+         * Converts a value from Mph to Knots
+         * @param {string} value - The provided value in Mph
+         * @returns {string} convertedValue - The converted value in Knots
+         */
+        function convertMphToKnot(value) {
+            var conversionFactor = 0.868976, convertedValue = '-';
+            if (angular.isString(value) &&  value != null) {
+                convertedValue = Math.round(parseInt(value) * conversionFactor).toString();
+            }
+            return convertedValue;
+        }
 
         /**
          * Gets the current moment

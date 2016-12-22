@@ -28,7 +28,7 @@ function spec() {
         });
 
         /**
-         * Sidenav event tests
+         * Function Tests
          */
         it('Should open the side navigation menu on calling "openSideNav"', function () {
             controller.closeSideNav('left');

@@ -10,7 +10,7 @@
 
     WeatherCtrl.$inject = ['$rootScope', '$scope', '$log', '$mdDialog', 'weatherFactory', 'weatherConstants'];
     function WeatherCtrl($rootScope, $scope, $log, $mdDialog, weatherFactory, weatherConstants) {
-        var vm = this;
+        var vm = this, _airfields, _forecast;
 
         /** Activate */
         vm.$onInit = activate;
@@ -24,18 +24,15 @@
         vm.mapDefault = weatherConstants.MAP_DEFAULTS;
 
         /** Bindings */
-        vm.closeAirfieldDetails = closeAirfieldDetails;
         vm.getAirfields = getAirfields;
         vm.getThreeHourlyForecast = getThreeHourlyForecast;
-        vm.openAirfieldDetails = openAirfieldDetails;
         vm.selectAirfield = selectAirfield;
         vm.setMapFocus = setMapFocus;
 
         /** Event Listeners */
         $scope.$on('leafletDirectiveMarker.dsftWeatherMap.click', selectAirfield);
         $scope.$on(weatherConstants.EVENT_MARKER_CLICK, function(event, args) {
-            getThreeHourlyForecast(args.model.sspaid);
-            openAirfieldDetails(event);
+            getThreeHourlyForecast(args.model);
         });
 
         /**
@@ -47,16 +44,16 @@
             getAirfields();
         }
 
-        function closeAirfieldDetails() {
-            $mdDialog.cancel();
-        }
-
+        /**
+         *
+         */
         function getAirfields() {
             var upstreamUrl = weatherConstants.UK_AIRFIELDS_URL;
             weatherFactory.getUpstreamAirfieldsData(upstreamUrl).subscribe(getAirfieldsSuccess, getAirfieldsError);
 
             function getAirfieldsSuccess(response) {
-                vm.airfields = response.data;
+                _airfields = weatherFactory.setMarkerDefaults(response.data);
+                vm.airfields = _airfields;
             }
 
             function getAirfieldsError(error) {
@@ -64,12 +61,18 @@
             }
         }
 
-        function getThreeHourlyForecast(siteId) {
+        /**
+         *
+         * @param siteId
+         */
+        function getThreeHourlyForecast(model) {
             var upstreamUrl = weatherConstants.THREE_HOURLY_FORECAST_URL;
-            weatherFactory.getUpstreamThreeHourlyForecastData(upstreamUrl, siteId).subscribe(getThreeHourlyForecastSuccess, getThreeHourlyForecastError);
+            weatherFactory.getUpstreamThreeHourlyForecastData(upstreamUrl, model.sspaid).subscribe(getThreeHourlyForecastSuccess, getThreeHourlyForecastError);
 
             function getThreeHourlyForecastSuccess(response) {
-                vm.forecast = response.data;
+                _forecast = response.data;
+                vm.forecast = _forecast;
+                weatherFactory.setAirfieldDetails(model, _forecast);
             }
 
             function getThreeHourlyForecastError(error) {
@@ -77,23 +80,21 @@
             }
         }
 
-        function openAirfieldDetails(event) {
-            $mdDialog.show({
-                controller: 'WeatherCtrl',
-                controllerAs: 'WeatherCtrl',
-                templateUrl: 'src/app/components/dialogs/airfield-details.html',
-                targetEvent: event,
-                clickOutsideToClose:true
-            });
-        }
-
+        /**
+         *
+         * @param event
+         * @param args
+         */
         function selectAirfield(event, args) {
             setMapFocus(args);
             $rootScope.$broadcast(weatherConstants.EVENT_MARKER_CLICK, args);
         }
 
+        /**
+         *
+         * @param selectedItem
+         */
         function setMapFocus(selectedItem) {
-            //console.log(selectedItem, typeof(selectedItem));
             vm.mapCentre = {
                 lat: selectedItem.model.lat,
                 lng: selectedItem.model.lng,

@@ -15,10 +15,14 @@
     position: relative;
 }
 .gallery .item {
-    height: 400px;
+    height: 700px;
     overflow: hidden;
     text-align: center;
-    background: #4d87e2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
 }
 .gallery .controls {
     position: absolute;

@@ -19,7 +19,7 @@ function spec() {
         });
 
         /**
-         * Moment Tests
+         * Function Tests
          */
         it('Should get the current moment on calling "getMoment"', function () {
             jasmine.clock().mockDate(baseDate);

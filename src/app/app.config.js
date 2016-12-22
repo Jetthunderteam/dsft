@@ -13,6 +13,8 @@
         //    enabled: true,
         //    requireBase: false
         //});
+        $locationProvider.html5Mode(false);
+        $locationProvider.hashPrefix('');
         $mdThemingProvider.disableTheming();
         $urlRouterProvider.when('', '/');
         $urlRouterProvider.otherwise('/');

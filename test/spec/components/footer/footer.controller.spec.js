@@ -4,7 +4,10 @@
 describe('Footer Controller Tests', spec);
 
 function spec() {
-    var scope, controller, utilsFactory;
+    var scope, controller, utilsFactory,
+        _mockSocialLinks;
+
+    _mockSocialLinks = [{'link': 'facebook', 'url': ''}, {'link': 'twitter', 'url': ''}, {'link': 'google-plus', 'url': ''}];
 
     beforeEach(function() {
         module('dsft');
@@ -21,7 +24,14 @@ function spec() {
         });
 
         /**
-         * Footer copyright tests
+         * Binding Test
+         */
+        it('Should have a defined set of social links', function () {
+            expect(controller.socialLinks).toEqual(_mockSocialLinks);
+        });
+
+        /**
+         * Function Tests
          */
         it('Should get the current year in YYYY format on calling "getYear"', function () {
             spyOn(utilsFactory, 'getYear').and.returnValue('2016');
