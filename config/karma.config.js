@@ -41,7 +41,7 @@ module.exports = function(config){
             libs+'angular-ui-router/release/angular-ui-router.min.js',
             libs+'rx/dist/rx.all.min.js',
             libs+'rx-angular/dist/rx.angular.min.js',
-            libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
+            libs+'angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
             libs+'angular-material/angular-material.min.js',
             source+'modernizr.js',
             libs+'moment/min/moment.min.js',

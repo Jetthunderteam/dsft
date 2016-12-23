@@ -47,7 +47,8 @@ module.exports = function() {
             libs+'angular-material/angular-material.min.css',
             libs+'bootstrap/dist/css/bootstrap.min.css',
             libs+'animate.css/animate.min.css',
-            libs+'leaflet/dist/leaflet.css'
+            libs+'leaflet/dist/leaflet.css',
+            libs+'flickity/dist/flickity.min.css'
         ],
         dependantJS: [
             libs+'jquery/dist/jquery.min.js',
@@ -61,7 +62,7 @@ module.exports = function() {
             libs+'angular-ui-router/release/angular-ui-router.min.js',
             libs+'rx/dist/rx.all.min.js',
             libs+'rx-angular/dist/rx.angular.min.js',
-            libs+'angular-bootstrap/ui-bootstrap-tpls.min.js',
+            libs+'angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
             libs+'angular-material/angular-material.min.js',
             source+'modernizr.js',
             libs+'moment/min/moment.min.js',
@@ -72,7 +73,9 @@ module.exports = function() {
             libs+'angularfire/dist/angularfire.min.js',
             libs+'firebase/firebase.js',
             libs+'angulartics/dist/angulartics.min.js',
-            libs+'angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js'
+            libs+'angulartics-google-tag-manager/dist/angulartics-google-tag-manager.min.js',
+            libs+'isotope-layout/dist/isotope.pkgd.min.js',
+            libs+'flickity/dist/flickity.pkgd.min.js'
         ]
     };
     return config;

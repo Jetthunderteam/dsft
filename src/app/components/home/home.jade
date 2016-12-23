@@ -1,28 +1,42 @@
 <!-- Home Component -->
-// Gallery Section
-div.gallery.items-3.autoplay
-    div.control-operator(id='item-{{$index}}', ng-repeat='slide in HomeCtrl.slides track by $index')
-    figure.item(ng-style="{'background-image':'url({{slide.imageUrl}})'}" ng-repeat='slide in HomeCtrl.slides track by $index')
-        h1
-// Gallery Section End
+// Slider Section
+div.dsft-homeSlider#home-slider-section
+    div.dsft-homeSliderItem.dsft-homeSliderItem--first
+    div.dsft-homeSliderItem.dsft-homeSliderItem--second
+    div.dsft-homeSliderItem.dsft-homeSliderItem--third
+    div.dsft-homeSliderItem.dsft-homeSliderItem--fourth
+    div.dsft-homeSliderItem.dsft-homeSliderItem--fifth
+    div.dsft-homeSliderItem.dsft-homeSliderItem--sixth
+    div.dsft-homeSliderItem.dsft-homeSliderItem--seventh
+    div.dsft-homeSliderItem.dsft-homeSliderItem--eighth
+    div.dsft-homeSliderItem.dsft-homeSliderItem--ninth
+    div.dsft-homeSliderItem.dsft-homeSliderItem--tenth
+// Slider Section End
 
 // Controls Section
-div.dsft-homeControlContainer
-    a.dsft-homeControlPrev
+div.dsft-homeControlContainer#home-controls-section
+    a.dsft-homeControlPrev(ng-click='HomeCtrl.sliderPrev()')
         md-icon.dsft-homeControlIcon keyboard_arrow_left
-    a.dsft-homeControlNext
+    a.dsft-homeControlNext(ng-click='HomeCtrl.sliderNext()')
         md-icon.dsft-homeControlIcon keyboard_arrow_right
+    a.dsft-homeControlCart(ng-click='')
+        md-icon.dsft-homeControlIcon shopping_cart
+    a.dsft-homeControlStore(ng-click='')
+        md-icon.dsft-homeControlIcon redeem
+    a.dsft-homeControlNews(ng-click='')
+        md-icon.dsft-homeControlIcon date_range
+    a.dsft-homeControlFeedback(ng-click='')
+        md-icon.dsft-homeControlIcon assignment
+    a.dsft-homeControlWeather(ng-click='')
+        md-icon.dsft-homeControlIcon cloud
     span.flex
-    ul.dsft-homeControlSelector
-        li.dsft-homeControlSelectorItem(ng-repeat='slide in HomeCtrl.slides track by $index')
-            a.dsft-homeControlSelectorDot(href='#item-{{$index}}', target='_self')
     span.flex
     a.dsft-homeControlScroll
         md-icon.dsft-homeControlIcon keyboard_arrow_down
 // Controls Section End
 
 // About Section
-section.section-padding#about-section
+section.section-padding#home-about-section
     div.container
         div.row.text-xs-center
             h1 Devon & Somerset Flight Training
@@ -39,11 +53,12 @@ section.section-padding#about-section
                 p We pride ourselves in providing the highest quality of training, so why not give us a call and decide for yourself by arranging your very first flight.
 // About Section End
 
-div.parallax
-    img(src='')
+// Parallax Break
+div.parallax(ng-style="{'background-image':'url(src/assets/images/parallax/parallax4.jpg)'}")
+// Parallax Break End
 
 // Location Section
-section.section-padding#location-section
+section.section-padding#home-location-section
     div.container
         div.row.text-xs-center
             h1 Location
@@ -57,8 +72,26 @@ section.section-padding#location-section
                 p Our location upon the beautiful Blackdown Hills provides us with, what we believe to be, some of the most stunning views anywhere in the UK. Quaint secluded villages, beautiful rolling countryside and rugged coastal views are a sight not worth missing. We are situated at an outstanding 839 feet above Sea Level, making us the highest licenced airfield in the United Kingdom.
 // Location Section End
 
+// Gallery Section
+section.section-padding#home-gallery-section
+    div.container
+        div.row.text-xs-center
+            div.dsft-homeGallery
+                div.dsft-homeGalleryItem
+                div.dsft-homeGalleryItem.dsft-homeGalleryItemSm
+                div.dsft-homeGalleryItem.dsft-homeGalleryItemSm
+                div.dsft-homeGalleryItem.dsft-homeGalleryItemMd
+                div.dsft-homeGalleryItem.dsft-homeGalleryItemLg
+                div.dsft-homeGalleryItem.dsft-homeGalleryItemSm
+
+// Gallery Section End
+
+// Parallax Break
+div.parallax(ng-style="{'background-image':'url(src/assets/images/parallax/parallax7.jpg)'}")
+// Parallax Break End
+
 // Visit Section
-section.section-padding#visit-section
+section.section-padding#home-visit-section
     div.container
         div.row.text-xs-center
             h1 Visit us
@@ -98,4 +131,5 @@ section.section-padding#visit-section
 
 footer-directive
 <!-- /Home Component -->
+
 

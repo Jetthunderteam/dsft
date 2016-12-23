@@ -30,7 +30,7 @@ a:focus,a:hover{ outline:none; text-decoration:none; }
 /*************************
 Parallax
 **************************/
-.parallax{ background-attachment:fixed; background-position:center; background-repeat:no-repeat; background-size:cover; }
+.parallax{ height: 400px; background-attachment:fixed; background-position:center; background-repeat:no-repeat; background-size:contain; }
 .parallax,.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6{ color:$white; }
 .parallax input[type="text"],.parallax input[type="text"]:hover,.parallax input[type="email"],.parallax input[type="email"]:hover,.parallax input[type="url"],.parallax input[type="url"]:hover,.parallax input[type="password"],.parallax input[type="password"]:hover,.parallax textarea,.parallax textarea:hover{ color:$white; font-weight:300; }
 /*************************

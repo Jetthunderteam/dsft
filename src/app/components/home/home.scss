@@ -9,17 +9,74 @@ Home Component Style
 /*************************
 Home Slider Style
 **************************/
+.dsft-homeSlider { background: #EEE;}
+.dsft-homeSliderItem {  background: #8C8; background-position: center center; background-size: cover;  border-radius: 0;  counter-increment: carousel-cell;  height: 700px; left: 0 !important; opacity: 0; transition: opacity 0.3s ease-in-out;  width: 100%; z-index: -1;  }
+.dsft-homeSliderItem:before { align-items: center; color: white; content: url('assets/images/logos/badge.png'); display: flex; flex-direction: row; height: 100%; justify-content: center; }
+.dsft-homeSliderItem.is-selected { opacity: 1;  z-index: 0 }
+.dsft-homeSliderItem--first { background-image: url('assets/images/home/home-slide1.jpg');}
+.dsft-homeSliderItem--second { background-image: url('assets/images/home/home-slide2.jpg'); }
+.dsft-homeSliderItem--third { background-image: url('assets/images/home/home-slide3.jpg'); }
+.dsft-homeSliderItem--fourth { background-image: url('assets/images/home/home-slide4.jpg'); }
+.dsft-homeSliderItem--fifth { background-image: url('assets/images/home/home-slide5.jpg'); }
+.dsft-homeSliderItem--sixth { background-image: url('assets/images/home/home-slide6.jpg'); }
+.dsft-homeSliderItem--seventh { background-image: url('assets/images/home/home-slide7.jpg'); }
+.dsft-homeSliderItem--eighth { background-image: url('assets/images/home/home-slide8.jpg'); }
+.dsft-homeSliderItem--ninth { background-image: url('assets/images/home/home-slide9.jpg'); }
+.dsft-homeSliderItem--tenth { background-image: url('assets/images/home/home-slide10.jpg'); }
 /*************************
-Home Controls
+Home Control Style
 **************************/
-@mixin dsft-homeControlButton {background: $background-super-dark; height:50px; width: 50px;}
+@mixin dsft-homeControlButton { height:50px; width: 50px;}
+@mixin dsft-homeGalleryItem {margin: 10px; height: 190px;}
 .dsft-homeControlContainer { background: $background-dark; height: 50px; width: 100%; @include flexRowBetweenCenter;}
-.dsft-homeControlPrev{@include dsft-homeControlButton; @include flexRowCenterCenter;}
-.dsft-homeControlNext {@include dsft-homeControlButton; @include flexRowCenterCenter;}
-.dsft-homeControlScroll {@include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlPrev{ background: $background-super-dark; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlNext { background: $background-super-dark; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlCart { background: $accent-eco; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlStore { background: $accent-charm; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlNews { background: $accent-freeze; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlFeedback { background: $accent-nuclear; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlWeather {background: $accent-glow; @include dsft-homeControlButton; @include flexRowCenterCenter;}
+.dsft-homeControlScroll { background: $background-super-dark; @include dsft-homeControlButton; @include flexRowCenterCenter;}
 .dsft-homeControlIcon {color: $white;}
 .dsft-homeControlSelector{list-style-type: none;  margin: 0;  padding: 0;}
 .dsft-homeControlSelectorItem {float: left; height: 12px; width: 12px;}
 .dsft-homeControlSelectorDot { background-color: $white; border-radius: 100%; display: block; height: 12px; width: 12px; }
-
+/*************************
+Home About Style
+**************************/
 .dsft-homeAboutInfoBlock{ border-left-width: 2px; border-left-style: solid; border-left-color: $accent-charm; overflow: hidden;  padding: 20px;  position: relative; }
+/*************************
+Home Image Gallery Style
+**************************/
+.dsft-homeGallery { }
+.dsft-homeGalleryItemSm { background: black; width: 150px; @include dsft-homeGalleryItem;}
+.dsft-homeGalleryItemMd {background: grey; width: 300px; @include dsft-homeGalleryItem;}
+.dsft-homeGalleryItemLg {background: blue; width: 600px; @include dsft-homeGalleryItem;}
+/*************************
+Flickity Overrides
+**************************/
+.flickity-slider {  transform: none !important;  }
+.flickity-page-dots { bottom: 0px; line-height: 0;}
+.flickity-page-dots .dot {  border-radius: 0;  height: 4px;  margin: 0;  width: calc(100% / 10);  }
+.flickity-page-dots .dot.is-selected {  background: $white;  }
+/*************************
+Media Queries
+**************************/
+// Extra small devices (portrait phones, less than 34em)
+@media (max-width: 33.9em) {
+    .dsft-homeSliderItem:before { transform: scale(0.5);}
+}
+
+// Small devices (landscape phones, less than 48em)
+@media (max-width: 47.9em) {
+    .dsft-homeSliderItem {height: 400px;}
+    .dsft-homeSliderItem:before { transform: scale(0.7);}
+}
+
+// Medium devices (tablets, less than 62em)
+@media (max-width: 61.9em) {}
+
+// Large devices (desktops, less than 75em)
+@media (max-width: 74.9em) {}
+
+
